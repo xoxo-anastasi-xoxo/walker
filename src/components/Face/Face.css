@@ -1,0 +1,57 @@
+.face {
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+  min-width: 300px;
+  box-sizing: border-box;
+  color: #2196F3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../img/1500974132_wwalls.ru-60062.jpg");
+}
+.face__text {
+  margin: 0 auto;
+  padding: 10px;
+  text-shadow: white 0 0 5px;
+}
+@media (max-width: 810px) {
+  .face {
+    width: 100%;
+  }
+}
+@media (max-width: 610px) {
+  .face {
+    height: 330px;
+  }
+  .face__text {
+    padding-bottom: 3px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 440px) {
+  .face {
+    height: 280px;
+  }
+  .face__text {
+    padding-top: 5px;
+    padding-bottom: 1px;
+    font-size: 20px;
+    width: 240px;
+  }
+}
+.two {
+  padding: 0;
+}
+@media (max-width: 360px) {
+  .face {
+    height: 250px;
+  }
+  .face__text {
+    padding: 6.5px;
+  }
+  .one {
+    display: none;
+  }
+}

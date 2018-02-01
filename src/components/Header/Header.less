@@ -1,0 +1,85 @@
+@import "../../shared";
+
+.header {
+  height: 72px;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 300px;
+  box-sizing: border-box;
+  color: @main_color;
+  font-family: 'Comfortaa', cursive;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #d9d9d9 1px solid;
+
+  &__text {
+    margin: 0;
+    padding: 15px 5%;
+    font-weight: bold;
+    font-size: 42px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__item {
+      box-sizing: border-box;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px 10px;
+
+      &:hover {
+        border-bottom: @main_color 2px solid;
+      }
+
+      &__link {
+        text-decoration: none;
+
+        &:visited {
+          color: @main_color; /* Цвет посещенных ссылок */
+        }
+        &:active {
+          color: @main_color; /* Цвет активных ссылок */
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: none;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__menu {
+      background-color: white;
+      visibility: collapse;
+      position: absolute;
+      right: 0;
+      top: 72px;
+      display: block;
+      width: 100%;
+      &__item {
+        border-bottom: #d9d9d9 1px solid;
+      }
+    }
+    &__button {
+      display: block;
+
+      &:focus + .header__menu {
+        visibility: visible;
+      }
+    }
+  }
+}
