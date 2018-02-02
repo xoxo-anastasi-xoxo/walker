@@ -16,7 +16,7 @@
   padding: 10px;
   text-shadow: white 0 0 5px;
 }
-@media (max-width: 810px) {
+@media (max-width: 850px) {
   .face {
     width: 100%;
   }

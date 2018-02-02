@@ -8,7 +8,7 @@ class Menu extends Component {
         return (
             <div className="header__menu">
                 {
-                    this.props.list.map((key, index) => <MenuItem index={index} key={index} title={key}/>)
+                    this.props.list.map((key, index) => <MenuItem index={index} key={index} title={key.name} href={key.href}/>)
                 }
             </div>
         );

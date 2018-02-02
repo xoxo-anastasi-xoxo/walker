@@ -33,6 +33,7 @@
 }
 .header__menu__item__link {
   text-decoration: none;
+  color: #2196F3;
 }
 .header__menu__item__link:visited {
   color: #2196F3;

@@ -1,6 +1,6 @@
 let name = "Walker";
 let year = 2018;
-let main_menu = ["Web", "О нас", "Скачать", "FAQ"];
+let main_menu = [{name:"Web", href:"/web"}, {name:"О нас", href:"/"}, {name:"Скачать", href:"/download"}, {name:"FAQ", href:"/faq"}];
 let about_walker = [
     {
         img: "img/img_1.jpg",
