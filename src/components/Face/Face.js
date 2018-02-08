@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import "./Face.css"
+import Button from "./Button";
 
 class Face extends Component {
     render() {
@@ -7,6 +8,7 @@ class Face extends Component {
             <div className="face">
                 <h2 className="face__text one">Здесь и сейчас.</h2>
                 <h2 className="face__text two">Время для живого общения.</h2>
+                <Button href="/" title="Попробовать"/>
             </div>
         );
     }

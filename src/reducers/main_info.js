@@ -1,6 +1,6 @@
 let name = "Walker";
 let year = 2018;
-let main_menu = [{name:"Web", href:"/web"}, {name:"О нас", href:"/"}, {name:"Скачать", href:"/download"}, {name:"FAQ", href:"/faq"}];
+let main_menu = [{name:"Главная", href:"/"}, {name:"О нас", href:"/about"}, {name:"Скачать", href:"/download"}];
 let about_walker = [
     {
         img: "img/img_1.jpg",
@@ -45,8 +45,9 @@ let about_us = [
         responsibility: "Backend-разработчик"
     }
 ];
+let isLogIn = false;
 
-export default function main_info(state = {name, year, main_menu, about_us, about_walker}, action) {
+export default function main_info(state = {name, year, main_menu, about_us, about_walker, isLogIn}, action) {
     switch (action.type) {
 
         default:

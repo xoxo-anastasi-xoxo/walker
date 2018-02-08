@@ -11,7 +11,8 @@ class Home extends Component {
             <div className="home-page">
                 <Header/>
                 <Face/>
-                <About list={this.props.about_walker} title="Walker - это:"/>
+                <About list={this.props.about_walker} title="Почему именно Walker?"/>
+                <About list={this.props.about_walker} title="Что ты можешь найти здесь?"/>
                 <About list={this.props.about_us} title="Наша команда"/>
                 <Footer/>
             </div>

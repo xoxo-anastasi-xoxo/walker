@@ -3,12 +3,11 @@
   width: 80%;
   min-width: 300px;
   box-sizing: border-box;
-  color: #2196F3;
+  color: #122e68;
   font-family: 'Comfortaa', cursive;
 }
 .about__title {
   margin: 35px 0;
-  border-bottom: #d9d9d9 1px solid;
 }
 .about__list {
   display: flex;
