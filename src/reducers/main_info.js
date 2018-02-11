@@ -128,22 +128,22 @@ const socialNetworks = [
     {
     key: 1,
     name: "VK",
-    to: "/web",
+    to: "/web/account",
     src: "img/vk.svg"
 }, {
     key: 2,
     name: "Twitter",
-    to: "/web",
+    to: "/web/account",
     src: "img/twitter.svg"
 }, {
     key: 3,
     name: "Google",
-    to: "/web",
+    to: "/web/account",
     src: "img/google.svg"
 }, {
     key: 4,
     name: "Facebook",
-    to: "/web",
+    to: "/web/account",
     src: "img/facebook.svg"
 }];
 
