@@ -18,8 +18,8 @@ class Header extends Component {
                         <h1 className="header-main__text">Walker</h1>
                     </a>
                     <div className="header-main">
-                        <Button href="#" title="Web"/>
-                        {this.props.flag ? <Avatar/> : <Button href="#" title="Войти"/>}
+                        <Button href="/web" title="Web"/>
+                        {this.props.flag ? <Avatar/> : <Button href="/login" title="Войти"/>}
                         <MenuButton/>
                         <Menu/>
                         <Language/>

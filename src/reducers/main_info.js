@@ -4,18 +4,65 @@ let main_menu = [{name:"Главная", href:"/"}, {name:"О нас", href:"/ab
 let about_walker = [
     {
         img: "img/img_1.jpg",
-        name: "Коллеги",
-        title: "Бизнес-встречи одним щелчком по карте"
+        name: "",
+        title: "Простота и понятность"
     },
     {
         img: "img/img_2.jpg",
-        name: "Новые знакомства",
-        title: "Новые знакомства на публичных мероприятиях"
+        name: "",
+        title: "Только интересующие Вас события"
     },
     {
         img: "img/img_3.jpg",
-        name: "Старые друзья",
-        title: "Встречи с друзьями в один клик"
+        name: "",
+        title: "Доступ в любой точке мира с доступом к Интернету"
+    },
+    {
+        img: "img/img_1.jpg",
+        name: "",
+        title: "Возможность использования без регистрации"
+    },
+    {
+        img: "img/img_2.jpg",
+        name: "",
+        title: "Своевременные уведомленияо предстоящих мероприятиях"
+    },
+    {
+        img: "img/img_3.jpg",
+        name: "",
+        title: "Безопасность ваших данных и открытая политика"
+    }
+];
+let about_what = [
+    {
+        img: "img/img_1.jpg",
+        name: "",
+        title: "Самые интересные события поблизости"
+    },
+    {
+        img: "img/img_2.jpg",
+        name: "",
+        title: "Бизнес-встречи в один клик"
+    },
+    {
+        img: "img/img_3.jpg",
+        name: "",
+        title: "Организация масштабных мероприятий одним щелчком"
+    },
+    {
+        img: "img/img_1.jpg",
+        name: "",
+        title: "Новые способы провести время с друзьями"
+    },
+    {
+        img: "img/img_2.jpg",
+        name: "",
+        title: "Шанс найти единомышленников"
+    },
+    {
+        img: "img/img_3.jpg",
+        name: "",
+        title: "Частные мероприятия для особенных гостей"
     }
 ];
 let about_us = [
@@ -46,8 +93,39 @@ let about_us = [
     }
 ];
 let isLogIn = false;
+let footer = [
+    {
+        title: "Компания",
+        isLink: true,
+        list: [
+            {title: "О нас", href: "/about"},
+            {title: "FAQ", href: "/faq"},
+            {title: "Сотрудничество", href: "/"},
+            {title: "Техническая поддержка", href: "/"}
+            ]
+    },
+    {
+        title: "Скачать",
+        isLink: true,
+        list: [
+            {title: "IOS", href: "/download"},
+            {title: "Android", href: "/download"}
+        ]
+    },
+    {
+        title: "Помощь",
+        isLink: false,
+        list: [
+            {title: "+7(888)888 88 88"},
+            {title: "Ежедневно"},
+            {title: "10:00 - 20:00 (Мск)"},
+            {title: "Whatsapp: 7(888)888 88 88"},
+            {title: "Telegram: @WalkerHelp"}
+        ]
+    }
+];
 
-export default function main_info(state = {name, year, main_menu, about_us, about_walker, isLogIn}, action) {
+export default function main_info(state = {name, year, main_menu, about_us,about_what, about_walker, isLogIn, footer}, action) {
     switch (action.type) {
 
         default:

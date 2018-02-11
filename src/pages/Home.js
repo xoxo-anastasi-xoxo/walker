@@ -12,7 +12,7 @@ class Home extends Component {
                 <Header/>
                 <Face/>
                 <About list={this.props.about_walker} title="Почему именно Walker?"/>
-                <About list={this.props.about_walker} title="Что ты можешь найти здесь?"/>
+                <About list={this.props.about_what} title="Что ты можешь найти здесь?"/>
                 <About list={this.props.about_us} title="Наша команда"/>
                 <Footer/>
             </div>
@@ -22,6 +22,7 @@ class Home extends Component {
 
 const mapStateToProps = state => ({
     about_walker: state.main_info.about_walker,
+    about_what: state.main_info.about_what,
     about_us: state.main_info.about_us
 });
 

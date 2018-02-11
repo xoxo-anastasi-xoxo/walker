@@ -2,7 +2,7 @@
 
 .about {
   margin: 0 auto;
-  width: 80%;
+  width: 1000px;
   min-width: 300px;
   box-sizing: border-box;
   color: @head_color;
@@ -10,7 +10,7 @@
 
   &__title {
     margin: 35px 0;
-    //border-bottom: #d9d9d9 1px solid;
+    text-shadow: white 0 0 10px;
   }
   &__list {
     display: flex;
@@ -19,11 +19,12 @@
 
     &__item {
       width: 30%;
-
+      padding: 15px;
       &__text {
         margin: 15px;
         font-size: 16px;
         color: @text_color;
+        text-shadow: white 0 0 10px;
       }
 
       &__img {
@@ -31,9 +32,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 90%;
-        height: 22vw;
+        width: 70%;
+        height: 210px;
         border-radius: 100%;
+        box-shadow: 0 0 10px 10px #e5e9fe;
       }
     }
   }
@@ -72,7 +74,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1167px) {
   .about {
     width: 100%;
   }
