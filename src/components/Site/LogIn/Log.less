@@ -1,0 +1,147 @@
+@import "../../../shared";
+
+.login {
+  min-height: ~"calc(100vh - 150px)";
+  margin: 0 auto;
+  width: 1000px;
+  min-width: 300px;
+  box-sizing: border-box;
+  color: @text_color;
+  font-family: 'Comfortaa', cursive;
+
+  &__title {
+    font-size: 35px;
+    margin: 50px;
+    color: @head_color;
+    font-weight: bold;
+    text-shadow: white 0 0 10px;
+  }
+
+  &__text {
+    margin: 10px 100px;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: white 0 0 10px;
+  }
+
+ &__button {
+   width: 200px;
+   height: 30px;
+   text-decoration: none;
+   color: white;
+   //margin: 3px auto;
+   &:visited {
+     color: white;
+   }
+   &:active {
+     color: white;
+   }
+   &:hover {
+     color: @main_color;
+   }
+
+   &__text {
+     border: @main_color solid 2px;
+     padding: 11px 0 0;
+     background-color: @head_color;
+     border-radius: 10px;
+     margin: auto;
+     width: 280px;
+     height: 30px;
+   }
+ }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__button {
+      z-index: 1;
+      overflow: hidden;
+      margin: 20px 5px;
+      width: 80px;
+      height: 80px;
+      background-color: unset;
+      color: @back_color;
+      text-align: center;
+      font-size: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+      border-radius: 50px 50px 50px 50px;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      -moz-border-radius: 50px 50px 50px 50px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */ inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */ inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */ inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */ inset 0 -15px 30px rgba(0, 0, 0, 0.3); /* Dark Background */
+      -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),
+      inset 0 1px rgba(255, 255, 255, 0.3),
+      inset 0 10px rgba(255, 255, 255, 0.2),
+      inset 0 10px 20px rgba(255, 255, 255, 0.25),
+      inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5),
+      inset 0 1px rgba(255, 255, 255, 0.3),
+      inset 0 10px rgba(255, 255, 255, 0.2),
+      inset 0 10px 20px rgba(255, 255, 255, 0.25),
+      inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+
+      outline: none;
+
+      &:hover {
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+
+      &__image {
+        z-index: -1;
+        width: 78px;
+        height: 78px;
+        position: relative;
+        left: -10px;
+        top: -11px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (max-width: 1167px) {
+  .login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .login {
+    &__text {
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .login {
+    &__title {
+font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .login {
+    &__title {
+      margin: 15px;
+    }
+    &__list {
+      &__button {
+        width: 62px;
+        height: 62px;
+        &__image {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
