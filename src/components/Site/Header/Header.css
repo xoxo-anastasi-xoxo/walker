@@ -109,6 +109,10 @@
   height: 5px;
   width: 5px;
 }
+.header__menu-button__inner {
+  height: 5px;
+  width: 5px;
+}
 .header__menu-button:focus {
   background-image: url("../../../img/menu_2.svg");
 }
