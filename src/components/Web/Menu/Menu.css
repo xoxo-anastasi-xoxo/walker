@@ -14,14 +14,17 @@
   display: flex;
   justify-content: flex-start;
 }
+.menu__main__notification {
+  cursor: pointer;
+}
 .menu__main__notification__active {
-  top: 7px;
+  top: 8px;
   left: 38px;
   position: absolute;
   border-radius: 100%;
-  background-color: red;
-  height: 12px;
-  width: 12px;
+  background-color: #fff800;
+  height: 15px;
+  width: 15px;
 }
 .menu__main__notification__logo {
   height: 40px;
