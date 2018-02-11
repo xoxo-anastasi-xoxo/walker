@@ -4,7 +4,7 @@ import Menu from '../components/Web/Menu/Menu'
 class Web extends Component {
     render() {
         return (
-            <div className="web-page">
+            <div className="page">
                 <Menu/>
             </div>
         );

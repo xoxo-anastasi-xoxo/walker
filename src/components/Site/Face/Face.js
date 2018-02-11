@@ -8,7 +8,7 @@ class Face extends Component {
             <div className="face">
                 <h2 className="face__text one">Здесь и сейчас.</h2>
                 <h2 className="face__text two">Время для живого общения.</h2>
-                <Button href="/" title="Попробовать"/>
+                <Button href="/login" title="Попробовать"/>
             </div>
         );
     }

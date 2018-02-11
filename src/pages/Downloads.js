@@ -5,7 +5,7 @@ import Footer from "../components/Site/Footer/Footer";
 class Downloads extends Component {
     render() {
         return (
-            <div className="download-page">
+            <div className="page">
                 <Header/>
                 <p>Ну в это уже другое) снова</p>
                 <Footer/>

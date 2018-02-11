@@ -8,7 +8,7 @@ import Footer from "../components/Site/Footer/Footer";
 class Home extends Component {
     render() {
         return (
-            <div className="home-page">
+            <div className="page">
                 <Header/>
                 <Face/>
                 <About list={this.props.about_walker} title="Почему именно Walker?"/>

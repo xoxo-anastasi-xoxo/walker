@@ -5,7 +5,7 @@ import Footer from "../components/Site/Footer/Footer";
 class About extends Component {
     render() {
         return (
-            <div className="about-page">
+            <div className="page">
                 <Header/>
                 <p>Ну в это уже другое)</p>
                 <Footer/>

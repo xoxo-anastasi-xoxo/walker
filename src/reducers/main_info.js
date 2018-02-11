@@ -1,7 +1,7 @@
-let name = "Walker";
-let year = 2018;
-let main_menu = [{name:"Главная", href:"/"}, {name:"О нас", href:"/about"}, {name:"Скачать", href:"/download"}];
-let about_walker = [
+const name = "Walker";
+const year = 2018;
+const main_menu = [{name:"Главная", href:"/"}, {name:"О нас", href:"/about"}, {name:"Скачать", href:"/download"}];
+const about_walker = [
     {
         img: "img/img_1.jpg",
         name: "",
@@ -33,7 +33,7 @@ let about_walker = [
         title: "Безопасность ваших данных и открытая политика"
     }
 ];
-let about_what = [
+const about_what = [
     {
         img: "img/img_1.jpg",
         name: "",
@@ -65,7 +65,7 @@ let about_what = [
         title: "Частные мероприятия для особенных гостей"
     }
 ];
-let about_us = [
+const about_us = [
     {
         img: "img/Lesha.jpg",
         name: "Алексей Горбачев",
@@ -93,7 +93,7 @@ let about_us = [
     }
 ];
 let isLogIn = false;
-let footer = [
+const footer = [
     {
         title: "Компания",
         isLink: true,
@@ -124,8 +124,34 @@ let footer = [
         ]
     }
 ];
+const socialNetworks = [{
+    key: 1,
+    name: "VK",
+    to: "https://oauth.vk.com/authorize?client_id="
+    + 6278299 + "&display=popup&redirect_uri="
+    + "https://nkwalker.herokuapp.com/"
+    // + "http://localhost:3000/"
+    + "&scope=offline,friends,photos&response_type=token&v=5.69",
+    src: "img/vk.svg"
+}, {
+    key: 2,
+    name: "Twitter",
+    to: "/",
+    src: "img/twitter.svg"
+}, {
+    key: 3,
+    name: "Google",
+    to: "/",
+    src: "img/google.svg"
+}, {
+    key: 4,
+    name: "Facebook",
+    to: "/",
+    src: "img/facebook.svg"
+}];
 
-export default function main_info(state = {name, year, main_menu, about_us,about_what, about_walker, isLogIn, footer}, action) {
+export default function main_info(state = {name, year, main_menu,
+    about_us,about_what, about_walker, isLogIn, footer, socialNetworks}, action) {
     switch (action.type) {
 
         default:
