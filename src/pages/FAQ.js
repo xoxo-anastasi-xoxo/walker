@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Header from '../components/Header/Header'
-import Footer from "../components/Footer/Footer";
+import Header from '../components/Site/Header/Header'
+import Footer from "../components/Site/Footer/Footer";
 
 class FAQ extends Component {
     render() {

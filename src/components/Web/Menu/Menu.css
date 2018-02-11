@@ -1,0 +1,34 @@
+.menu {
+  min-height: 60px;
+  width: 500px;
+  min-width: 300px;
+  background-color: #122e68;
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.menu__main {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+.menu__main__notification__active {
+  top: 7px;
+  left: 38px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: red;
+  height: 12px;
+  width: 12px;
+}
+.menu__main__notification__logo {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../img/logo_3.svg");
+}

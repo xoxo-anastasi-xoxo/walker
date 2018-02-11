@@ -9,8 +9,8 @@ class Column extends Component {
                 {
                     this.props.item.list.map((key, index) => {
                         if (this.props.item.isLink)
-                            return <a className="footer-up__column__item link"
-                                      href={key.href} key={index}>{key.title}</a>;
+                            return <div className="footer-up__column__item" key={index}><a className="footer-up__column__item link"
+                                      href={key.href} key={index}>{key.title}</a></div>;
                         else return <div className="footer-up__column__item" key={index}>{key.title}</div>
                     })
                 }

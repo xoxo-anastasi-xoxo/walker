@@ -116,10 +116,10 @@ let footer = [
         title: "Помощь",
         isLink: false,
         list: [
-            {title: "+7(888)888 88 88"},
+            {title: "+7(888) 888 88 88"},
             {title: "Ежедневно"},
-            {title: "10:00 - 20:00 (Мск)"},
-            {title: "Whatsapp: 7(888)888 88 88"},
+            {title: "10:00-20:00 (Мск)"},
+            {title: "Whatsapp: 7 (888) 888 88 88"},
             {title: "Telegram: @WalkerHelp"}
         ]
     }

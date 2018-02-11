@@ -1,14 +1,11 @@
 import React, {Component} from 'react'
-import Header from '../components/Header/Header'
-import Footer from "../components/Footer/Footer";
+import Menu from '../components/Web/Menu/Menu'
 
 class Web extends Component {
     render() {
         return (
             <div className="web-page">
-                <Header/>
-                <p>Ну в это уже другое)</p>
-                <Footer/>
+                <Menu/>
             </div>
         );
     }

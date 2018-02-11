@@ -12,7 +12,7 @@ class Footer extends Component {
                 <div className="footer">
                     <div className="footer-up">
                         {
-                            // this.props.footer.map((key, index) => <Column index={index} key={index} item={key}/>)
+                             this.props.footer.map((key, index) => <Column index={index} key={index} item={key}/>)
                         }
                     </div>
                     <Main/>

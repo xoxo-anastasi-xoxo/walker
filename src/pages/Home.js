@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import Header from '../components/Header/Header'
-import Face from "../components/Face/Face";
+import Header from '../components/Site/Header/Header'
+import Face from "../components/Site/Face/Face";
 import {connect} from "react-redux";
-import About from "../components/About/About";
-import Footer from "../components/Footer/Footer";
+import About from "../components/Site/About/About";
+import Footer from "../components/Site/Footer/Footer";
 
 class Home extends Component {
     render() {

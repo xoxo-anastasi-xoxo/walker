@@ -1,4 +1,4 @@
-@import "../../shared";
+@import "../../../shared";
 
 .container {
   width: 100%;
@@ -51,7 +51,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-image: url("../../img/logo_3.svg");
+      background-image: url("../../../img/logo_3.svg");
     }
 
     &__text {
@@ -118,11 +118,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("../../img/menu.svg");
+    background-image: url("../../../img/menu.svg");
     height: 5px;
     width: 5px;
     &:focus {
-      background-image: url("../../img/menu_2.svg");
+      background-image: url("../../../img/menu_2.svg");
     }
   }
 
@@ -167,7 +167,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-image: url("../../img/language.png");
+      background-image: url("../../../img/language.png");
     }
     &__name {
       color: @back_color;
@@ -195,12 +195,15 @@
       top: 72px;
       display: block;
       width: 100px;
-      //width: 166px;
 
     }
     &__menu-button {
       margin: auto 20px;
       display: block;
+
+      &:visited + .header__menu {
+        visibility: visible;
+      }
 
       &:focus + .header__menu {
         visibility: visible;

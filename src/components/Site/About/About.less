@@ -1,4 +1,4 @@
-@import "../../shared";
+@import "../../../shared";
 
 .about {
   margin: 0 auto;
@@ -9,7 +9,8 @@
   font-family: 'Comfortaa', cursive;
 
   &__title {
-    margin: 35px 0;
+    padding: 5px;
+    margin: 30px 0;
     text-shadow: white 0 0 10px;
   }
   &__list {
@@ -32,7 +33,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 70%;
+        width: 210px;
         height: 210px;
         border-radius: 100%;
         box-shadow: 0 0 10px 10px #e5e9fe;
@@ -56,23 +57,6 @@
   }
 }
 
-@media (max-width: 896px) {
-  .about {
-    &__list {
-
-      &__item {
-
-        &__text {
-          margin: 5px;
-          font-size: 14px;
-        }
-        &__img {
-          height: 26vw;
-        }
-      }
-    }
-  }
-}
 
 @media (max-width: 1167px) {
   .about {
@@ -80,20 +64,31 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 896px) {
   .about {
     &__list {
 
       &__item {
-        width: 48%;
+
+        &__text {
+          margin: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .about {
+    &__list {
+
+      &__item {
+        width: 45%;
 
         &__text {
           margin: 15px;
           font-size: 16px;
-        }
-
-        &__img {
-          height: 40vw;
         }
       }
     }
@@ -107,7 +102,7 @@
       &__item {
 
         &__text {
-          margin: 10px 5px;
+          margin: 10px;
           font-size: 14px;
         }
       }
@@ -125,10 +120,6 @@
         &__text {
           margin: 15px;
           font-size: 16px;
-        }
-
-        &__img {
-          height: 88vw;
         }
       }
     }

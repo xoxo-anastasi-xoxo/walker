@@ -14,7 +14,6 @@ import LogIn from "./pages/LogIn";
 
 
 class App extends Component {
-
     render() {
         return (
             <Router>
