@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee0ecbb-5b9d-4ac7-a8aa-a5cae5ce6b33" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/Site/Header/Header.css" afterPath="$PROJECT_DIR$/src/components/Site/Header/Header.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Site/Header/Header.css.map" afterPath="$PROJECT_DIR$/src/components/Site/Header/Header.css.map" />
+      <change beforePath="$PROJECT_DIR$/src/components/Site/Face/Face.less" afterPath="$PROJECT_DIR$/src/components/Site/Face/Face.less" />
       <change beforePath="$PROJECT_DIR$/src/components/Site/Header/Header.less" afterPath="$PROJECT_DIR$/src/components/Site/Header/Header.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -106,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Header.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Site/Header/Header.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="196" column="20" lean-forward="true" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+            <state relative-caret-position="819">
+              <caret line="187" column="13" lean-forward="true" selection-start-line="187" selection-start-column="13" selection-end-line="188" selection-end-column="19" />
               <folding>
                 <element signature="e#2401#2810#0" expanded="false" />
               </folding>
@@ -118,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Site/Header/Menu.js">
+      <file leaf-file-name="Face.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Site/Face/Face.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -174,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/components/Web/Menu/Menu.js" />
         <option value="$PROJECT_DIR$/src/components/Web/Menu/Notification.js" />
         <option value="$PROJECT_DIR$/src/components/Site/Footer/Main.js" />
-        <option value="$PROJECT_DIR$/src/components/Site/Face/Face.less" />
         <option value="$PROJECT_DIR$/src/components/Site/Face/Face.js" />
         <option value="$PROJECT_DIR$/src/pages/LogIn.js" />
         <option value="$PROJECT_DIR$/src/pages/Web.js" />
@@ -200,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/components/Web/Menu/Menu.less" />
         <option value="$PROJECT_DIR$/src/components/Site/Header/MenuButton.js" />
         <option value="$PROJECT_DIR$/src/components/Site/Header/Header.less" />
+        <option value="$PROJECT_DIR$/src/components/Site/Face/Face.less" />
       </list>
     </option>
   </component>
@@ -263,6 +261,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="walker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="walker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Site" type="462c0819:PsiDirectoryNode" />
+              <item name="Face" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="walker" type="b2602c69:ProjectViewProjectNode" />
@@ -352,12 +358,12 @@
       <workItem from="1518333926600" duration="23125000" />
       <workItem from="1518362064762" duration="8710000" />
       <workItem from="1518378576299" duration="45000" />
-      <workItem from="1518386127718" duration="1162000" />
+      <workItem from="1518386127718" duration="1557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101425000" />
+    <option name="totallyTimeSpent" value="101820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -633,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Site/Face/Face.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="50" column="3" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="50" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Site/About/About.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1014">
@@ -759,11 +758,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Site/Header/Header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="196" column="20" lean-forward="true" selection-start-line="196" selection-start-column="20" selection-end-line="196" selection-end-column="20" />
+        <state relative-caret-position="819">
+          <caret line="187" column="13" lean-forward="true" selection-start-line="187" selection-start-column="13" selection-end-line="188" selection-end-column="19" />
           <folding>
             <element signature="e#2401#2810#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Site/Face/Face.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

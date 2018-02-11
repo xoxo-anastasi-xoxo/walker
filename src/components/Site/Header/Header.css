@@ -164,6 +164,7 @@
 }
 @media (max-width: 940px) {
   .header__menu {
+    z-index: 100;
     border-radius: 0 0 7% 7%;
     background-color: #122e68;
     position: absolute;
