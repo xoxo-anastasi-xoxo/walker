@@ -188,14 +188,18 @@
     &__menu {
       border-radius: 0 0 7% 7%;
       background-color: @head_color;
-      visibility: collapse;
+      //display: none;
       position: absolute;
       right: 85px;
-      //right: 0;
       top: 72px;
-      display: block;
       width: 100px;
+      display: block;
+      visibility: hidden;
 
+      &:hover {
+        visibility: visible;
+
+      }
     }
     &__menu-button {
       margin: auto 20px;
@@ -205,7 +209,13 @@
         visibility: visible;
       }
 
+      &:active + .header__menu {
+        //display: block;
+        visibility: visible;
+      }
+
       &:focus + .header__menu {
+        //display: block;
         visibility: visible;
       }
     }

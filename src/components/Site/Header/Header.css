@@ -166,18 +166,24 @@
   .header__menu {
     border-radius: 0 0 7% 7%;
     background-color: #122e68;
-    visibility: collapse;
     position: absolute;
     right: 85px;
     top: 72px;
-    display: block;
     width: 100px;
+    display: block;
+    visibility: hidden;
+  }
+  .header__menu:hover {
+    visibility: visible;
   }
   .header__menu-button {
     margin: auto 20px;
     display: block;
   }
   .header__menu-button:visited + .header__menu {
+    visibility: visible;
+  }
+  .header__menu-button:active + .header__menu {
     visibility: visible;
   }
   .header__menu-button:focus + .header__menu {
