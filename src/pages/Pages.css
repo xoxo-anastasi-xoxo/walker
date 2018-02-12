@@ -2,3 +2,32 @@
   width: 100%;
   height: 100%;
 }
+.tes {
+  display: flex;
+}
+.test {
+  margin: auto;
+  padding: 0;
+  order: 3;
+  background-color: #fff800;
+  height: 45px;
+  width: 45px;
+}
+.test:visited + .test-two {
+  visibility: visible;
+}
+.test:active + .test-two {
+  visibility: visible;
+}
+.test:focus + .test-two {
+  visibility: visible;
+}
+.test-two {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  visibility: hidden;
+}
+.test-two:hover {
+  visibility: visible;
+}

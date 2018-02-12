@@ -2,3 +2,40 @@
   width: 100%;
   height: 100%;
 }
+
+.tes {
+  display: flex;
+}
+
+.test {
+  margin: auto;
+  padding: 0;
+  order: 3;
+  background-color: #fff800;
+  height: 45px;
+  width: 45px;
+
+  &:visited + .test-two {
+    visibility: visible;
+  }
+
+  &:active + .test-two {
+    visibility: visible;
+  }
+
+  &:focus + .test-two {
+    visibility: visible;
+  }
+}
+
+.test-two {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  visibility: hidden;
+
+  &:hover {
+    visibility: visible;
+  }
+}
+
