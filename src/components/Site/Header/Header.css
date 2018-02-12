@@ -100,22 +100,14 @@
 .header__menu-button {
   margin: auto;
   display: none;
-  padding: 20px;
+  padding: 0;
   order: 3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("../../../img/menu.svg");
-  height: 5px;
-  width: 5px;
-}
-.header__menu-button__inner {
-  position: relative;
-  left: -40px;
-  top: -20px;
-  height: 5px;
-  width: 5px;
-  background-image: none;
+  height: 45px;
+  width: 45px;
 }
 .header__menu-button:focus {
   background-image: url("../../../img/menu_2.svg");
