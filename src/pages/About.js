@@ -10,7 +10,11 @@ class About extends Component {
                 <Header/>
                 <p>Ну в это уже другое)</p>
                 <div className="tes">
-                <a href="javascript:void(0)" className="test"></a>
+                <a href="#" className="test"></a>
+                <div className="test-two"></div>
+
+                <span className="test" style={{width: "10px", height: "10px",
+                    cursor: "pointer",textDecoration:'underline'}}/>
                 <div className="test-two"></div></div>
                 <Footer/>
             </div>
