@@ -5,7 +5,7 @@ class MenuButton extends Component {
     render() {
         return (
             <a href="javascript:void(0)" className="header__menu-button">
-                <div className="header__menu-button__inner" ></div>
+                <div className="header__menu-button__inner header__menu-button" ></div>
             </a>
         );
     }

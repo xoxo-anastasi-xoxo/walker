@@ -123,8 +123,12 @@
     width: 5px;
 
     &__inner {
+      position: relative;
+      left: -40px;
+      top: -20px;
       height: 5px;
       width: 5px;
+      background-image: none;
     }
 
     &:focus {
@@ -195,7 +199,6 @@
       z-index: 100;
       border-radius: 0 0 7% 7%;
       background-color: @head_color;
-      //display: none;
       position: absolute;
       right: 85px;
       top: 72px;
@@ -217,12 +220,10 @@
       }
 
       &:active + .header__menu {
-        //display: block;
         visibility: visible;
       }
 
       &:focus + .header__menu {
-        //display: block;
         visibility: visible;
       }
     }
