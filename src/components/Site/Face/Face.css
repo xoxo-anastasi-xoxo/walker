@@ -17,6 +17,7 @@
   text-shadow: white 0 0 5px;
 }
 .face__button {
+  z-index: 0;
   position: absolute;
   top: 372px;
   left: 0;

@@ -1,13 +1,11 @@
 import React, {Component} from "react"
-import "./Menu.css"
+import "./Map.css"
 import {connect} from "react-redux";
-import Notification from "./Notification"
 
-class MainMenu extends Component {
+class Map extends Component {
     render() {
         return (
-            <div className="menu__main">
-                <Notification/>
+            <div className="map">
             </div>
         );
     }
@@ -17,4 +15,4 @@ const mapStateToProps = state => ({
     flag: state.main_info.isLogIn
 });
 
-export default connect(mapStateToProps)(MainMenu);
+export default connect(mapStateToProps)(Map);

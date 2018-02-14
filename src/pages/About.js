@@ -8,14 +8,6 @@ class About extends Component {
         return (
             <div className="page">
                 <Header/>
-                <p>Ну в это уже другое)</p>
-                <div className="tes">
-                <a href="#" className="test"></a>
-                <div className="test-two"></div>
-
-                <span className="test" style={{width: "10px", height: "10px",
-                    cursor: "pointer",textDecoration:'underline'}}/>
-                <div className="test-two"></div></div>
                 <Footer/>
             </div>
         );

@@ -92,7 +92,7 @@ const about_us = [
         responsibility: "Backend-разработчик"
     }
 ];
-let isLogIn = false;
+let isLogIn = true;
 const footer = [
     {
         title: "Компания",

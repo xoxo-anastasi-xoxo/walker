@@ -2,19 +2,87 @@
 
 .menu {
   min-height: 60px;
-  width: 500px;
+  width: 450px;
   min-width: 300px;
-  background-color: @head_color;
+  color: @text_color;
+  font-family: 'Comfortaa', cursive;
   position: fixed;
   left: 15px;
   top: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+
+  &__friend {
+    width: 100%;
+    padding-left: 10px;
+    height: 200px;
+    background-color: @back_color;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+  }
 
   &__main {
     height: 60px;
     display: flex;
     justify-content: flex-start;
+    background-color: @head_color;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+
+    &__friends {
+      cursor: pointer;
+      height: 35px;
+      width: 50px;
+      margin: 12.5px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../../../img/friend.svg");
+    }
+
+    &__events {
+      box-sizing: border-box;
+      cursor: pointer;
+      height: 40px;
+      width: 50px;
+      padding: 10px;
+      margin: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../../../img/map.svg");
+    }
+
+    &__search {
+      padding: 15px;
+      color: #787878;
+      &__loupe {
+        cursor: pointer;
+        height: 23px;
+        width: 23px;
+        top: 18px;
+        left: 403px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../../../img/loupe.svg");
+      }
+      &__input {
+        font-family: 'Comfortaa', cursive;
+        color: @text_color;
+        width: 100%;
+        font-size: 14px;
+        box-sizing: border-box;
+        height: 30px;
+        border: none;
+        padding:0 40px 0 10px;
+        border-radius: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
     &__notification {
       cursor: pointer;
       &__active {
@@ -22,9 +90,21 @@
         left: 38px;
         position: absolute;
         border-radius: 100%;
-        background-color: #fff800;
+        background-color: #ff850e;
         height: 15px;
         width: 15px;
+      }
+      &__ava {
+        box-sizing: border-box;
+        border: white 2px solid;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
       }
       &__logo {
         height: 40px;
@@ -34,6 +114,58 @@
         background-size: cover;
         background-position: center;
         background-image: url("../../../img/logo_3.svg");
+      }
+    }
+  }
+
+  &__not {
+    width: 100%;
+    padding-left: 10px;
+    max-height: 400px;
+    background-color: @back_color;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+
+    &__user-info {
+      //height: 60px;
+      display: flex;
+      justify-content: flex-start;
+      &__ava {
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 5px 5px #e5e9fe;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 15px;
+      }
+
+      &__container {
+        margin: 15px;
+        text-align: left;
+        text-shadow: white 0 0 10px;
+      }
+
+      &__text {
+        margin: 8px 0;
+      }
+    }
+
+    &__notlogin {
+      margin: 0;
+      text-align: left;
+      padding: 15px;
+      &__title {
+        //padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0;
+        font-size: 14px;
+      }
+      &__text {
+        font-size: 12.5px;
+        margin: 1px;
       }
     }
   }
