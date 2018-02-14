@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 
 class FriendCard extends Component {
         render() {
-            let style_1 = this.props.friend.isActive ? {} : {};
+            let style_1 = this.props.friend.isActive ? {backgroundImage: "url(\"" + this.props.friend.ava + "\")"} : {};
             let style_2;
             switch (this.props.friend.relationship){
                 case 0:

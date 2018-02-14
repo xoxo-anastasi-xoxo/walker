@@ -66,6 +66,34 @@ let friendList = [
         relationship: 2,
         name: "Владоооооосик",
         img: ""
+    },
+    {
+        id: "banana",
+        isActive: false,
+        relationship: 2,
+        name: "Владоооооосик",
+        img: ""
+    },
+    {
+        id: "banana",
+        isActive: false,
+        relationship: 2,
+        name: "Владоооооосик",
+        img: ""
+    },
+    {
+        id: "banana",
+        isActive: false,
+        relationship: 2,
+        name: "Владоооооосик",
+        img: ""
+    },
+    {
+        id: "banana",
+        isActive: false,
+        relationship: 2,
+        name: "Владоооооосик",
+        img: ""
     }
 ];
 let notList = [

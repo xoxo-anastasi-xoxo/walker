@@ -12,12 +12,39 @@
 
   &__friend {
     width: 100%;
-    padding-left: 10px;
-    height: 200px;
+    height: 300px;
     background-color: @back_color;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
     box-sizing: border-box;
+    overflow-y: scroll;
+    /* ie 10+ */
+    -ms-overflow-style: none;
+    /* фф (свойство больше не работает, других способов тоже нет)*/
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    &__item {
+      border-bottom: #aeaeae 1px solid;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &__active {
+        margin: 19px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border: @text_color 1px solid;
+        border-radius: 100%;
+
+        &:hover {
+          border-color: @main_color;
+        }
+      }
+    }
   }
 
   &__main {
@@ -37,6 +64,10 @@
       background-size: cover;
       background-position: center;
       background-image: url("../../../img/friend.svg");
+
+      &:hover {
+        background-image: url("../../../img/friend_2.svg");
+      }
     }
 
     &__events {
@@ -50,6 +81,10 @@
       background-size: cover;
       background-position: center;
       background-image: url("../../../img/map.svg");
+
+      &:hover {
+        background-image: url("../../../img/map_2.svg");
+      }
     }
 
     &__search {
@@ -105,6 +140,9 @@
         background-size: cover;
         background-position: center;
 
+        &:hover {
+          border-color: @main_color;
+        }
       }
       &__logo {
         height: 40px;
@@ -119,9 +157,10 @@
   }
 
   &__not {
+    overflow: scroll;
     width: 100%;
     padding-left: 10px;
-    max-height: 400px;
+    max-height: 300px;
     background-color: @back_color;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);

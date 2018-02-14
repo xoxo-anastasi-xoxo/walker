@@ -10,12 +10,37 @@
 }
 .menu__friend {
   width: 100%;
-  padding-left: 10px;
-  height: 200px;
+  height: 300px;
   background-color: #cfcfe1;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.menu__friend::-webkit-scrollbar {
+  width: 0;
+}
+.menu__friend__item {
+  border-bottom: #aeaeae 1px solid;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__friend__item__active {
+  margin: 19px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: #5b5b5b 1px solid;
+  border-radius: 100%;
+}
+.menu__friend__item__active:hover {
+  border-color: #2196F3;
 }
 .menu__main {
   height: 60px;
@@ -35,6 +60,9 @@
   background-position: center;
   background-image: url("../../../img/friend.svg");
 }
+.menu__main__friends:hover {
+  background-image: url("../../../img/friend_2.svg");
+}
 .menu__main__events {
   box-sizing: border-box;
   cursor: pointer;
@@ -46,6 +74,9 @@
   background-size: cover;
   background-position: center;
   background-image: url("../../../img/map.svg");
+}
+.menu__main__events:hover {
+  background-image: url("../../../img/map_2.svg");
 }
 .menu__main__search {
   padding: 15px;
@@ -100,6 +131,9 @@
   background-size: cover;
   background-position: center;
 }
+.menu__main__notification__ava:hover {
+  border-color: #2196F3;
+}
 .menu__main__notification__logo {
   height: 40px;
   width: 40px;
@@ -110,9 +144,10 @@
   background-image: url("../../../img/logo_3.svg");
 }
 .menu__not {
+  overflow: scroll;
   width: 100%;
   padding-left: 10px;
-  max-height: 400px;
+  max-height: 300px;
   background-color: #cfcfe1;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
