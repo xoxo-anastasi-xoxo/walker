@@ -1,0 +1,137 @@
+@import "../../../shared";
+
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Kaushan Script Regular';
+  src: url('../../../fonts/KaushanScript-Regular.eot');
+  src: url('../../../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/KaushanScript-Regular.woff') format('woff'),
+  url('../../../fonts/KaushanScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.n_header {
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  font-family: 'Proba Pro', cursive;
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image.png") no-repeat center;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+      font-family: 'Kaushan Script Regular', cursive;
+      color: white;
+      font-size: 48px;
+      margin: 35px 0 0 40px;
+    }
+    &__button {
+      cursor: pointer;
+      margin: 55px 40px 0 0;
+      width: 121px;
+      height: 36px;
+      padding: 6px 0;
+      box-sizing: border-box;
+      background-color: white;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      color: #636057;
+
+      &:visited {
+        color: #636057;
+      }
+      &:active {
+        color: #636057;
+      }
+      &:hover {
+        color: #636057;
+      }
+    }
+  }
+
+  &__bottom {
+    color: white;
+    &__title {
+      margin: 80px auto 25px;
+      max-width: 970px;
+      line-height: normal;
+      font-size: 55px;
+      text-align: center;
+
+    }
+
+    &__text {
+      margin: 0 auto;
+      max-width: 800px;
+
+      line-height: normal;
+      font-size: 26px;
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.8);
+
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .n_header {
+    &__bottom {
+      &__title {
+        max-width: 850px;
+        font-size: 50px;
+
+      }
+
+      &__text {
+        max-width: 700px;
+        font-size: 23px;
+
+      }
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  .n_header {
+    &__top {
+      &__title {
+        font-size: 48px;
+        margin: 35px 0 0 20px;
+      }
+      &__button {
+        margin: 55px 40px 0 0;
+        width: 121px;
+        height: 36px;
+        padding: 6px 0;
+      }
+    }
+
+    &__bottom {
+      &__title {
+        margin: 80px auto 25px;
+        max-width: 850px;
+        font-size: 50px;
+
+      }
+
+      &__text {
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 23px;
+
+      }
+    }
+  }
+}

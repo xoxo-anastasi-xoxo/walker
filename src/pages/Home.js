@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Header from '../components/Site/Header/Header'
+import Header from '../components/NewSite/Header/Header'
 import Face from "../components/Site/Face/Face";
 import {connect} from "react-redux";
 import About from "../components/Site/About/About";
@@ -10,11 +10,11 @@ class Home extends Component {
         return (
             <div className="page">
                 <Header/>
-                <Face/>
-                <About list={this.props.about_walker} title="Почему именно Walker?"/>
-                <About list={this.props.about_what} title="Что ты можешь найти здесь?"/>
-                <About list={this.props.about_us} title="Наша команда"/>
-                <Footer/>
+                {/*<Face/>*/}
+                {/*<About list={this.props.about_walker} title="Почему именно Walker?"/>*/}
+                {/*<About list={this.props.about_what} title="Что ты можешь найти здесь?"/>*/}
+                {/*<About list={this.props.about_us} title="Наша команда"/>*/}
+                {/*<Footer/>*/}
             </div>
         );
     }

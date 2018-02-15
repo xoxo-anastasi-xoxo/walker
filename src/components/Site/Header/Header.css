@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'Kaushan Script Regular';
+  src: url('../../../fonts/KaushanScript-Regular.eot');
+  src: url('../../../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'), url('../../../fonts/KaushanScript-Regular.woff') format('woff'), url('../../../fonts/KaushanScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   width: 100%;
   border-bottom: #d9d9d9 1px solid;
@@ -11,7 +23,7 @@
   min-width: 300px;
   box-sizing: border-box;
   color: white;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Kaushan Script Regular';
   display: flex;
   justify-content: space-between;
 }
