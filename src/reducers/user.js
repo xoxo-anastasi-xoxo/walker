@@ -14,44 +14,44 @@ let friendList = [
     {
         id: "banana",
         isActive: false,
-        relationship: 2,
+        relationship: 0,
         name: "Владоооооосик",
-        img: ""
+        img: "../../../img/Vladosik.jpg"
+    },
+    {
+        id: "banana",
+        isActive: false,
+        relationship: 1,
+        name: "Владоооооосик",
+        img: "../../../img/Vladosik.jpg"
     },
     {
         id: "banana",
         isActive: false,
         relationship: 2,
         name: "Владоооооосик",
-        img: ""
+        img: "../../../img/Vladosik.jpg"
     },
     {
         id: "banana",
         isActive: false,
         relationship: 2,
         name: "Владоооооосик",
-        img: ""
+        img: "../../../img/Vladosik.jpg"
     },
     {
         id: "banana",
         isActive: false,
         relationship: 2,
         name: "Владоооооосик",
-        img: ""
+        img: "../../../img/Vladosik.jpg"
     },
     {
         id: "banana",
         isActive: false,
         relationship: 2,
         name: "Владоооооосик",
-        img: ""
-    },
-    {
-        id: "banana",
-        isActive: false,
-        relationship: 2,
-        name: "Владоооооосик",
-        img: ""
+        img: "../../../img/Vladosik.jpg"
     },
     {
         id: "banana",

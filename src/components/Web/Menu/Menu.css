@@ -42,6 +42,27 @@
 .menu__friend__item__active:hover {
   border-color: #2196F3;
 }
+.menu__friend__item__ava {
+  margin: auto 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: white 1.5px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.menu__friend__item__info {
+  margin: auto;
+}
+.menu__friend__item__friend {
+  margin: auto 20px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .menu__main {
   height: 60px;
   display: flex;
@@ -152,6 +173,13 @@
   border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.menu__not::-webkit-scrollbar {
+  width: 0;
 }
 .menu__not__user-info {
   display: flex;

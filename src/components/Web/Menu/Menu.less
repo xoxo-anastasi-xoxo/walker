@@ -44,6 +44,30 @@
           border-color: @main_color;
         }
       }
+
+      &__ava {
+        margin: auto 5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        border: white 1.5px solid;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &__info {
+        margin: auto;
+      }
+
+      &__friend {
+        margin: auto 20px;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
@@ -165,6 +189,13 @@
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
     box-sizing: border-box;
+    /* ie 10+ */
+    -ms-overflow-style: none;
+    /* фф (свойство больше не работает, других способов тоже нет)*/
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
 
     &__user-info {
       //height: 60px;

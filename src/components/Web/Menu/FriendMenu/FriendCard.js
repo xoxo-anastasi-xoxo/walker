@@ -3,22 +3,27 @@ import "../Menu.css"
 import {connect} from "react-redux";
 
 class FriendCard extends Component {
-        render() {
-            let style_1 = this.props.friend.isActive ? {backgroundImage: "url(\"" + this.props.friend.ava + "\")"} : {};
-            let style_2;
-            switch (this.props.friend.relationship){
-                case 0:
-
-            }
+    render() {
+        let style_1 = this.props.friend.isActive ? {backgroundImage: "url(\"" + this.props.friend.img + "\")"} : {};
+        let style_2 = {};
+        switch (this.props.friend.relationship) {
+            case 0:
+                style_2 = {backgroundImage: "url(\"../../../img/plus.svg\")"};
+            case 1:
+                style_2.backgroundImage = "url(\"../../../img/plus.svg\")";
+            case 2:
+                style_2.backgroundImage = "url(\"../../../img/plus.svg\")";
+        }
 
         return (
             <div className="menu__friend__item">
                 <div className="menu__friend__item__active"/>
-                <div className="menu__friend__item__ava" style={{backgroundImage: "url(\"" + this.props.friend.ava + "\")"}}/>
+                <div className="menu__friend__item__ava"
+                     style={{backgroundImage: "url(\"" + this.props.friend.img + "\")"}}/>
                 <div className="menu__friend__item__info">
                     {this.props.friend.name}
                 </div>
-                <div className="menu__friend__item__friend"/>
+                <div className="menu__friend__item__friend" style={style_2}/>
             </div>
         );
     }
