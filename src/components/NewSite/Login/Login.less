@@ -1,0 +1,154 @@
+@import "../../../shared";
+
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Kaushan Script Regular';
+  src: url('../../../fonts/KaushanScript-Regular.eot');
+  src: url('../../../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/KaushanScript-Regular.woff') format('woff'),
+  url('../../../fonts/KaushanScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.n_login {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Proba Pro', cursive;
+  min-width: 300px;
+  min-height: 500px;
+  background: fixed url("../../../img/Login.png") no-repeat center;
+  background-size: cover;
+
+  &__main {
+    width: 60%;
+    min-width: 700px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+    &__left {
+      width: 50%;
+      font-family: 'Kaushan Script Regular', cursive;
+      color: white;
+      font-size: 68px;
+      margin: auto;
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+      &:active {
+        color: white;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+
+    &__right {
+      width: 50%;
+      margin: auto;
+
+      &__container {
+        background-color: white;
+        width: 250px;
+        padding: 0 50px 20px;
+
+        &__text {
+          padding: 20px;
+          color: #444444;
+          font-size: 20px;
+          margin: 0;
+        }
+
+        &__a {
+          text-decoration: none;
+          cursor: pointer;
+
+          &__vk {
+            margin: 0 auto;
+            background: no-repeat center url("../../../img/VK.svg");
+            background-size: contain;
+            height: 50px;
+            width: 250px;
+          }
+
+          &__google {
+            margin: 10px auto;
+            background: no-repeat center url("../../../img/Google.svg");
+            background-size: contain;
+            height: 48px;
+            width: 248px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+            border-radius: 2px;
+          }
+
+          &__facebook {
+            margin: 0 auto;
+            background: no-repeat center url("../../../img/Facebook.svg");
+            background-size: contain;
+            height: 50px;
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mmm {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .mmm {
+    display: block;
+
+    height: 50px;
+    width: 2px;
+  }
+  .n_login {
+    height: 100vh;
+    width: 100vw;
+    min-height: 400px;
+    &__main {
+      height: 100%;
+      width: 100%;
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+
+      &__left {
+        width: 100%;
+      }
+      &__right {
+        margin: 50px auto;
+        &__container {
+        background: none;
+          padding: 0;
+          margin:  0 auto;
+          &__text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .n_login {
+    &__main {
+      &__right {
+        width: 100%;
+        }
+
+    }
+  }
+}

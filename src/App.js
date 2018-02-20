@@ -7,10 +7,7 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home'
 import Web from './pages/Web'
-import FAQ from "./pages/FAQ";
-import Downloads from "./pages/Downloads";
 import LogInPage from "./pages/LogInPage";
-import About from "./pages/About";
 
 
 
@@ -21,11 +18,7 @@ class App extends Component {
                 <div className="App">
                     <Switch>
                         <Route exact path='/' component={Home}/>
-                        <Route exact path='/web' component={Web}/>
-                        <Route exact path='/faq' component={FAQ}/>
-                        <Route exact path='/download' component={Downloads}/>
                         <Route exact path='/login' component={LogInPage}/>
-                        <Route exact path='/about' component={About}/>
 
                     </Switch>
                 </div>

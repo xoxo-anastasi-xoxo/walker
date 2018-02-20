@@ -8,6 +8,7 @@
   width: 100%;
   font-family: 'Proba Pro', cursive;
   height: 100vh;
+  min-height: 500px;
   min-width: 300px;
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@
 .n_first-level__left {
   width: 35%;
   height: 80%;
-  margin: 20px 0;
+  margin: auto 0;
 }
 .n_first-level__left__item {
   width: 100%;

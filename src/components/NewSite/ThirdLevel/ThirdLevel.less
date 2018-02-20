@@ -11,75 +11,84 @@
   font-family: 'Proba Pro', cursive;
   height: 100vh;
   min-width: 300px;
+  min-height: 500px;
 
   &__inner {
     height: ~"calc(100vh - 61px)";
     display: flex;
     justify-content: center;
     &__left {
-      width: 50%;
+      width: 35%;
       height: 100%;
+      padding-top: 80px;
+      box-sizing: border-box;
       &__text {
-         font-size: 28px;
+         font-size: 30px;
        }
 
       &__button {
+        cursor: pointer;
         color: white;
         background-color: @main_color;
-        width: 230px;
-        height: 64px;
+        width: 200px;
+        height: 60px;
         font-size: 20px;
-        margin: auto;
-        padding: 22px;
+        margin-top: 70px;
+        padding: 20px;
         box-sizing: border-box;
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+        }
+        &:active {
+          color: white;
+        }
+        &:hover {
+          opacity: .95;
+          color: white;
+        }
+      }
+
+      &__download-buttons {
+        display: flex;
+        justify-content: space-around;
+        &__ios {
+          background: no-repeat center url("../../../img/app_store.svg");
+          background-size: contain;
+          width: 200px;
+          height: 60px;
+        }
+        &__android {
+          background: no-repeat center url("../../../img/google_play.svg");
+          background-size: contain;
+          width: 200px;
+          height: 60px;
+        }
       }
     }
 
     &__right {
-      width: 50%;
+      width: 35%;
       height: 100%;
       &__phone-1 {
-        background: no-repeat center url("../../../img/phone_0.png");
+        background: no-repeat center url("../../../img/phone_1.png");
         background-size: contain;
-        margin: 20px 0;
+        margin: 40px 0;
         height: 80%;
         width: 35%;
         position: absolute;
-        right: 30%;
-        bottom: 100px;
+        right: 17%;
+        top: 300vh;
       }
 
       &__phone-2 {
         background: no-repeat center url("../../../img/phone_0.png");
         background-size: contain;
-        margin: 20px 0;
-        height: 80%;
-        width: 35%;
-        //background-color: tomato;
-        position: absolute;
-        right: 20%;
-        top: ~"calc(400vh - 100px)";
+        margin: 7% 0 9% 50%;
+        height: 84%;
+        width: 50%;
       }
-    }
-  }
-
-  &__button {
-    position: absolute;
-    top: ~"calc(400vh - 100px)";
-    right: 90px;
-    opacity: 0.2;
-    //background: no-repeat center url("../../../img/вниз.svg");
-    //background-size: cover;
-    height: 70px;
-    width: 70px;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-
-    &:hover {
-      opacity: 0.5;
     }
   }
 }

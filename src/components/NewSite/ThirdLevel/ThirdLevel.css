@@ -9,6 +9,7 @@
   font-family: 'Proba Pro', cursive;
   height: 100vh;
   min-width: 300px;
+  min-height: 500px;
 }
 .n_third-level__inner {
   height: calc(100vh - 61px);
@@ -16,59 +17,70 @@
   justify-content: center;
 }
 .n_third-level__inner__left {
-  width: 50%;
+  width: 35%;
   height: 100%;
-}
-.n_third-level__inner__left__text {
-  font-size: 28px;
-}
-.n_third-level__inner__left__button {
-  color: white;
-  background-color: #2196F3;
-  width: 230px;
-  height: 64px;
-  font-size: 20px;
-  margin: auto;
-  padding: 22px;
+  padding-top: 80px;
   box-sizing: border-box;
 }
+.n_third-level__inner__left__text {
+  font-size: 30px;
+}
+.n_third-level__inner__left__button {
+  cursor: pointer;
+  color: white;
+  background-color: #2196F3;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  margin-top: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.n_third-level__inner__left__button:visited {
+  color: white;
+}
+.n_third-level__inner__left__button:active {
+  color: white;
+}
+.n_third-level__inner__left__button:hover {
+  opacity: .95;
+  color: white;
+}
+.n_third-level__inner__left__download-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.n_third-level__inner__left__download-buttons__ios {
+  background: no-repeat center url("../../../img/app_store.svg");
+  background-size: contain;
+  width: 200px;
+  height: 60px;
+}
+.n_third-level__inner__left__download-buttons__android {
+  background: no-repeat center url("../../../img/google_play.svg");
+  background-size: contain;
+  width: 200px;
+  height: 60px;
+}
 .n_third-level__inner__right {
-  width: 50%;
+  width: 35%;
   height: 100%;
 }
 .n_third-level__inner__right__phone-1 {
-  background: no-repeat center url("../../../img/phone_0.png");
+  background: no-repeat center url("../../../img/phone_1.png");
   background-size: contain;
-  margin: 20px 0;
+  margin: 40px 0;
   height: 80%;
   width: 35%;
   position: absolute;
-  right: 30%;
-  bottom: 100px;
+  right: 17%;
+  top: 300vh;
 }
 .n_third-level__inner__right__phone-2 {
   background: no-repeat center url("../../../img/phone_0.png");
   background-size: contain;
-  margin: 20px 0;
-  height: 80%;
-  width: 35%;
-  position: absolute;
-  right: 20%;
-  top: calc(400vh - 100px);
-}
-.n_third-level__button {
-  position: absolute;
-  top: calc(400vh - 100px);
-  right: 90px;
-  opacity: 0.2;
-  height: 70px;
-  width: 70px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.n_third-level__button:hover {
-  opacity: 0.5;
+  margin: 7% 0 9% 50%;
+  height: 84%;
+  width: 50%;
 }

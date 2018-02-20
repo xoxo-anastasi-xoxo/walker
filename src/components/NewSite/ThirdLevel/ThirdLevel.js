@@ -9,11 +9,11 @@ class ThirdLevel extends Component {
                 <div  className="n_third-level__inner">
                     <div  className="n_third-level__inner__left">
                         <p className="n_third-level__inner__left__text">Зарегистрируйтесь прямо сейчас!</p>
-                        <div  className="n_third-level__inner__left__button">Попробовать</div>
+                        <a className="n_third-level__inner__left__button" href="/login">Попробовать</a>
                         <p className="n_third-level__inner__left__text">или</p>
                         <div className="n_third-level__inner__left__download-buttons">
                             <a className="n_third-level__inner__left__download-buttons__ios" href="/"></a>
-                            <a className="n_third-level__inner__left__download-buttons__adroid" href="/"> </a>
+                            <a className="n_third-level__inner__left__download-buttons__android" href="/"> </a>
                         </div>
                     </div>
                     <div  className="n_third-level__inner__right">

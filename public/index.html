@@ -14,16 +14,16 @@
     <title>Walker</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="text/javascript">
-        jQuery(function(f){
-            var element = f('a.scrollto');
-            f(window).scroll(function(){
-                element['fade'+ (f(this).scrollTop() > 10 ? 'In': 'Out')](500);
-            });
-        });
-    </script>
-    <script>
+  <div id="root"></div>
+    <!--<script type="text/javascript">-->
+        <!--jQuery(function(f){-->
+            <!--var element = f('a.scrollto');-->
+            <!--f(window).scroll(function(){-->
+                <!--element['fade'+ (f(this).scrollTop() > 10 ? 'In': 'Out')](500);-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+    <script  type="text/javascript">
         jQuery(document).ready(function() {
             jQuery("a.scrollto").click(function () {
                 elementClick = jQuery(this).attr("href")

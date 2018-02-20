@@ -15,16 +15,23 @@
   font-style: normal;
 }
 
+.more {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);}
+
 .n_header {
   height: 100vh;
   margin: 0 auto;
   width: 100%;
   min-width: 300px;
+  min-height: 500px;
   box-sizing: border-box;
   font-family: 'Proba Pro', cursive;
-  background: linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image.png") no-repeat center;
+  background: fixed linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image.png") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
 
   &__top {
     display: flex;
@@ -47,6 +54,7 @@
       }
     }
     &__button {
+      position: sticky;
       cursor: pointer;
       margin: 46px 40px 0 0;
       width: 150px;
@@ -98,16 +106,14 @@
 
 
   &__button {
-    //position: absolute;
     position: fixed;
-    bottom: 30px;
-    right: 90px;
+    bottom: 4%;
+    right: 4%;
     opacity: 0.2;
     background: no-repeat center url("../../../img/вниз.svg");
     background-size: cover;
     height: 70px;
     width: 70px;
-    display: none;
     &:hover {
       opacity: 0.5;
     }
