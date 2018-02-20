@@ -151,8 +151,19 @@ const socialNetworks = [
     src: "img/facebook.svg"
 }];
 
+
+const merits = [
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+    "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+];
+
+const scrollHeigh = window.pageYOffset;
+
+
 export default function main_info(state = {name, year, main_menu,
-    about_us,about_what, about_walker, isLogIn, footer, socialNetworks}, action) {
+    about_us,about_what, about_walker, isLogIn, footer, socialNetworks, merits, scrollHeigh}, action) {
     switch (action.type) {
 
         default:

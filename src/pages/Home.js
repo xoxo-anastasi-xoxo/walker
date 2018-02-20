@@ -1,15 +1,19 @@
 import React, {Component} from 'react'
 import Header from '../components/NewSite/Header/Header'
-import Face from "../components/Site/Face/Face";
 import {connect} from "react-redux";
-import About from "../components/Site/About/About";
-import Footer from "../components/Site/Footer/Footer";
+import Footer from "../components/NewSite/Footer/Footer";
+import FirstLevel from "../components/NewSite/FirstLevel/FirstLevel";
+import SecondLevel from "../components/NewSite/SecondLevel/SecondLevel";
+import ThirdLevel from "../components/NewSite/ThirdLevel/ThirdLevel";
 
 class Home extends Component {
     render() {
         return (
             <div className="page">
                 <Header/>
+                <FirstLevel/>
+                <SecondLevel/>
+                <ThirdLevel/>
                 {/*<Face/>*/}
                 {/*<About list={this.props.about_walker} title="Почему именно Walker?"/>*/}
                 {/*<About list={this.props.about_what} title="Что ты можешь найти здесь?"/>*/}

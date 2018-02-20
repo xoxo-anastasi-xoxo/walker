@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+.n_third-level {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Proba Pro', cursive;
+  height: 100vh;
+  min-width: 300px;
+}
+.n_third-level__inner {
+  height: calc(100vh - 61px);
+  display: flex;
+  justify-content: center;
+}
+.n_third-level__inner__left {
+  width: 50%;
+  height: 100%;
+}
+.n_third-level__inner__left__text {
+  font-size: 28px;
+}
+.n_third-level__inner__left__button {
+  color: white;
+  background-color: #2196F3;
+  width: 230px;
+  height: 64px;
+  font-size: 20px;
+  margin: auto;
+  padding: 22px;
+  box-sizing: border-box;
+}
+.n_third-level__inner__right {
+  width: 50%;
+  height: 100%;
+}
+.n_third-level__inner__right__phone-1 {
+  background: no-repeat center url("../../../img/phone_0.png");
+  background-size: contain;
+  margin: 20px 0;
+  height: 80%;
+  width: 35%;
+  position: absolute;
+  right: 30%;
+  bottom: 100px;
+}
+.n_third-level__inner__right__phone-2 {
+  background: no-repeat center url("../../../img/phone_0.png");
+  background-size: contain;
+  margin: 20px 0;
+  height: 80%;
+  width: 35%;
+  position: absolute;
+  right: 20%;
+  top: calc(400vh - 100px);
+}
+.n_third-level__button {
+  position: absolute;
+  top: calc(400vh - 100px);
+  right: 90px;
+  opacity: 0.2;
+  height: 70px;
+  width: 70px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.n_third-level__button:hover {
+  opacity: 0.5;
+}

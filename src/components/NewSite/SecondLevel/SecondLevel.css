@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+.n_second-level {
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.7);
+  font-family: 'Proba Pro', cursive;
+  height: 100vh;
+  min-width: 300px;
+}
+.n_second-level__title {
+  box-sizing: border-box;
+  height: 15%;
+  color: white;
+  padding: 22px;
+  font-size: 26px;
+}
+.n_second-level__map {
+  width: 74%;
+  height: 70%;
+  margin: 0 auto;
+}
+.n_second-level__button {
+  position: absolute;
+  top: calc(300vh - 100px);
+  right: 90px;
+  opacity: 0.2;
+  height: 70px;
+  width: 70px;
+}
+.n_second-level__button:hover {
+  opacity: 0.5;
+}

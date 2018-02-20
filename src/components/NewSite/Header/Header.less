@@ -16,7 +16,7 @@
 }
 
 .n_header {
-  height: 500px;
+  height: 100vh;
   margin: 0 auto;
   width: 100%;
   min-width: 300px;
@@ -24,6 +24,7 @@
   font-family: 'Proba Pro', cursive;
   background: linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image.png") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 
   &__top {
     display: flex;
@@ -34,13 +35,24 @@
       color: white;
       font-size: 48px;
       margin: 35px 0 0 40px;
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+      &:active {
+        color: white;
+      }
+      &:hover {
+        color: white;
+      }
     }
     &__button {
       cursor: pointer;
-      margin: 55px 40px 0 0;
-      width: 121px;
-      height: 36px;
-      padding: 6px 0;
+      margin: 46px 40px 0 0;
+      width: 150px;
+      height: 44px;
+      font-size: 18px;
+      padding: 8px 0;
       box-sizing: border-box;
       background-color: white;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -54,6 +66,7 @@
         color: #636057;
       }
       &:hover {
+        opacity: .95;
         color: #636057;
       }
     }
@@ -82,6 +95,23 @@
 
     }
   }
+
+
+  &__button {
+    //position: absolute;
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
+    opacity: 0.2;
+    background: no-repeat center url("../../../img/вниз.svg");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    display: none;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 @media (max-width: 950px) {
@@ -105,32 +135,101 @@
 
 @media (max-width: 850px) {
   .n_header {
+    &__bottom {
+      &__title {
+        max-width: 750px;
+        font-size: 45px;
+
+      }
+
+      &__text {
+        max-width: 600px;
+        font-size: 20px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .n_header {
     &__top {
       &__title {
-        font-size: 48px;
         margin: 35px 0 0 20px;
       }
       &__button {
-        margin: 55px 40px 0 0;
-        width: 121px;
-        height: 36px;
-        padding: 6px 0;
+        margin: 46px 20px 0 0;
+      }
+    }
+    &__bottom {
+      &__title {
+        max-width: 650px;
+        font-size: 42px;
+
+      }
+
+      &__text {
+        max-width: 500px;
+        font-size: 20px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .n_header {
+    &__bottom {
+      &__title {
+        max-width: 550px;
+        font-size: 35px;
+      }
+
+      &__text {
+        margin-top: 40px;
+        max-width: 450px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .n_header {
+    &__top {
+      &__title {
+        margin: 25px 0 0 20px;
+      }
+      &__button {
+        margin: 36px 20px 0 0;
       }
     }
 
     &__bottom {
       &__title {
-        margin: 80px auto 25px;
-        max-width: 850px;
-        font-size: 50px;
-
+        max-width: 490px;
+        font-size: 32px;
+        margin-top: 100px;
       }
 
       &__text {
-        margin: 0 auto;
-        max-width: 700px;
-        font-size: 23px;
+        margin-top: 40px;
+        max-width: 390px;
+        font-size: 18px;
+      }
+    }
+  }
+}
 
+@media(max-width: 420px) {
+  .n_header {
+    &__top {
+
+    }
+    &__botton {
+      margin: 0 10px;
+      &__title {
+        margin-top: 40px;
       }
     }
   }

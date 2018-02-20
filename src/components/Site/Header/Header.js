@@ -15,7 +15,7 @@ class Header extends Component {
                 <div className="header">
                     <a href="/" className="header-main">
                         <Logo/>
-                        <h1 className="header-main__text">Walker</h1>
+                        <h1 className="header-main__text">W</h1>
                     </a>
                     <div className="header-main">
                         <Button href="/web" title="Web"/>
