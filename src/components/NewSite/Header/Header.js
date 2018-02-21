@@ -3,15 +3,17 @@ import "./Header.css"
 import {connect} from "react-redux";
 
 class Header extends Component {
+    componentWillMount() {
+        window.onscroll = this.bb.bind(this)
+    }
+
     bb = function () {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
         var h = document.documentElement.clientHeight > 500 ? document.documentElement.clientHeight : 500;
-        this.props.changeAnchor(scrolled, document.documentElement.clientHeight);
+        this.props.changeAnchor(scrolled, h);
     };
 
     render() {
-        console.log("h ", this.props.documentHeight);
-        console.log("s ", this.props.scrollHeight);
 
 
         let href = this.props.scrollHeight > this.props.documentHeight - 10 ?
@@ -37,11 +39,6 @@ class Header extends Component {
                 </div>
 
                 <a className={style} href={href}> </a>
-                <script>
-                    {
-                        window.onscroll = this.bb.bind(this)
-                    }
-                </script>
             </div>
         );
     }

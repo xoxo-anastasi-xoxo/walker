@@ -3,7 +3,6 @@ let isNotified = false;
 // 1 - уведомления
 // 2 - друзья
 // 3 - события
-let openedMenu = 0;
 let userId = "cocos";
 let userAva = "../../../img/Anastasi.jpg";
 let userName = "Anastasia Kazantseva";
@@ -96,15 +95,8 @@ let friendList = [
         img: ""
     }
 ];
-let notList = [
-    {
-        title: "Приглашение на мероприятие!",
-        type: 1,
 
-    }
-]
-
-export default function user(state = {isNotified, openedMenu, userId, userAva, userName, friendList}, action) {
+export default function user(state = {isNotified, userId, userAva, userName, friendList}, action) {
     switch (action.type) {
         case "CHANGE_MENU":
             let not = action.data === 1 ? false : state.isNotified;

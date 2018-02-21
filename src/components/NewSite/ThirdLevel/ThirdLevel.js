@@ -12,8 +12,12 @@ class ThirdLevel extends Component {
                         <a className="n_third-level__inner__left__button" href="/login">Попробовать</a>
                         <p className="n_third-level__inner__left__text">или</p>
                         <div className="n_third-level__inner__left__download-buttons">
-                            <a className="n_third-level__inner__left__download-buttons__ios" href="/"></a>
-                            <a className="n_third-level__inner__left__download-buttons__android" href="/"> </a>
+                            <a className="n_third-level__inner__left__download-buttons__ios" href="/">
+                                <div className="n_third-level__inner__left__download-buttons__ios__block"> </div>
+                            </a>
+                            <a className="n_third-level__inner__left__download-buttons__android" href="/">
+                                <div className="n_third-level__inner__left__download-buttons__android__block"> </div>
+                            </a>
                         </div>
                     </div>
                     <div  className="n_third-level__inner__right">

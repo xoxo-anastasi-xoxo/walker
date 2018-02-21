@@ -227,15 +227,36 @@
   }
 }
 
-@media(max-width: 420px) {
+@media(max-width: 425px) {
   .n_header {
+    max-height: 600px;
     &__top {
 
     }
-    &__botton {
+    &__bottom {
       margin: 0 10px;
       &__title {
         margin-top: 40px;
+      }
+      &__text {
+        margin: 40px 10px ;
+      }
+    }
+    &__button {
+display: none;
+    }
+  }
+}
+
+@media(max-width: 354px) {
+  .n_header {
+    &__top {
+      &__title {
+        margin-left: 10px;
+      }
+      &__button {
+        width: 130px;
+        margin-right: 10px;
       }
     }
   }

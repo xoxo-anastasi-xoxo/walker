@@ -23,14 +23,19 @@
   height: 70%;
   margin: 0 auto;
 }
-.n_second-level__button {
-  position: absolute;
-  top: calc(300vh - 100px);
-  right: 90px;
-  opacity: 0.2;
-  height: 70px;
-  width: 70px;
+@media (max-width: 780px) {
+  .n_second-level__map {
+    width: 90%;
+  }
 }
-.n_second-level__button:hover {
-  opacity: 0.5;
+@media (max-width: 450px) {
+  .n_second-level__title {
+    height: 50px;
+    font-size: 20px;
+    padding: 23px;
+  }
+  .n_second-level__map {
+    margin-top: 20px;
+    height: 83%;
+  }
 }

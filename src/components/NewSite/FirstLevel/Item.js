@@ -1,7 +1,5 @@
 import React, {Component} from "react"
 import "./FirstLevel.css"
-import Line from "./Line";
-import {connect} from "react-redux";
 
 class Item extends Component {
     render() {

@@ -26,18 +26,26 @@
     height: 70%;
     margin: 0 auto;
   }
+}
 
-  &__button {
-    position: absolute;
-    top: ~"calc(300vh - 100px)";
-    right: 90px;
-    opacity: 0.2;
-    //background: no-repeat center url("../../../img/вниз.svg");
-    //background-size: cover;
-    height: 70px;
-    width: 70px;
-    &:hover {
-      opacity: 0.5;
+@media (max-width: 780px) {
+  .n_second-level {
+    &__map {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .n_second-level {
+    &__title {
+      height: 50px;
+      font-size: 20px;
+      padding: 23px;
+    }
+    &__map {
+      margin-top: 20px;
+      height: 83%;
     }
   }
 }

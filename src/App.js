@@ -6,7 +6,6 @@ import {
     Switch
 } from 'react-router-dom';
 import Home from './pages/Home'
-import Web from './pages/Web'
 import LogInPage from "./pages/LogInPage";
 
 

@@ -169,11 +169,29 @@
     font-size: 18px;
   }
 }
-@media (max-width: 420px) {
-  .n_header__botton {
+@media (max-width: 425px) {
+  .n_header {
+    max-height: 600px;
+  }
+  .n_header__bottom {
     margin: 0 10px;
   }
-  .n_header__botton__title {
+  .n_header__bottom__title {
     margin-top: 40px;
+  }
+  .n_header__bottom__text {
+    margin: 40px 10px ;
+  }
+  .n_header__button {
+    display: none;
+  }
+}
+@media (max-width: 354px) {
+  .n_header__top__title {
+    margin-left: 10px;
+  }
+  .n_header__top__button {
+    width: 130px;
+    margin-right: 10px;
   }
 }

@@ -15,6 +15,7 @@
 
   &__inner {
     height: ~"calc(100vh - 61px)";
+    min-height: 439px;
     display: flex;
     justify-content: center;
     &__left {
@@ -23,8 +24,8 @@
       padding-top: 80px;
       box-sizing: border-box;
       &__text {
-         font-size: 30px;
-       }
+        font-size: 30px;
+      }
 
       &__button {
         cursor: pointer;
@@ -71,23 +72,108 @@
     &__right {
       width: 35%;
       height: 100%;
+      display: flex;
+      justify-content: left;
       &__phone-1 {
+        z-index: 2;
         background: no-repeat center url("../../../img/phone_1.png");
         background-size: contain;
-        margin: 40px 0;
-        height: 80%;
-        width: 35%;
-        position: absolute;
-        right: 17%;
-        top: 300vh;
+        height: 100%;
+        width: 50%;
+        margin-left: 40px;
+        margin-right: -100px;
+        padding-top: 10px;
       }
 
       &__phone-2 {
+        z-index: -2;
         background: no-repeat center url("../../../img/phone_0.png");
         background-size: contain;
-        margin: 7% 0 9% 50%;
-        height: 84%;
+        height: 100%;
         width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .n_third-level {
+    &__inner {
+      &__left {
+        width: 40%;
+
+      }
+      &__right {
+        width: 50%;
+        &__phone-1 {
+
+          margin-right: -70px;
+        }
+        &__phone-2 {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .n_third-level {
+    &__inner {
+      &__left {
+        padding-top: 45px;
+        &__text {
+          font-size: 25px;
+        }
+
+        &__button {
+          box-sizing: border-box;
+          width: 600px;
+          height: 50px;
+          font-size: 18px;
+        }
+
+        &__download-buttons {
+          display: block;
+          &__ios {
+            &__block {
+              margin: 5px auto;
+              background: no-repeat center url("../../../img/app_store.svg");
+              background-size: contain;
+              width: 200px;
+              height: 60px;
+            }
+          }
+          &__android {
+            &__block {
+              margin: 5px auto;
+              background: no-repeat center url("../../../img/google_play.svg");
+              background-size: contain;
+              width: 200px;
+              height: 60px;
+            }
+          }
+        }
+      }
+
+      &__right {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .n_third-level {
+    &__inner{
+      &__left {
+        width: 90%;
+        &__text {
+          font-size: 30px;
+        }
+      }
+
+      &__right {
+        display: none;
       }
     }
   }
