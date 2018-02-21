@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee0ecbb-5b9d-4ac7-a8aa-a5cae5ce6b33" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.js" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.less" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/Item.js" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/Item.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.js" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.less" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.css" afterPath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.less" afterPath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.js" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" />
-      <change beforePath="$PROJECT_DIR$/src/img/phone_1.png" afterPath="$PROJECT_DIR$/src/img/phone_1.png" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/user.js" afterPath="$PROJECT_DIR$/src/reducers/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -78,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecondLevel.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecondLevel.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="471">
@@ -216,13 +195,13 @@
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/NewSite/Header/Header.less" />
         <option value="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.js" />
         <option value="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.less" />
         <option value="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.js" />
         <option value="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" />
         <option value="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.less" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -413,12 +392,12 @@
       <workItem from="1518697908502" duration="3277000" />
       <workItem from="1518701316332" duration="1367000" />
       <workItem from="1518703067291" duration="8612000" />
-      <workItem from="1519075622112" duration="46559000" />
+      <workItem from="1519075622112" duration="47052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208924000" />
+    <option name="totallyTimeSpent" value="209417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -801,14 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewSite/Header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -882,6 +853,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
           <folding />
         </state>
       </provider>
