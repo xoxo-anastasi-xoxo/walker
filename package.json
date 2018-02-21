@@ -5,7 +5,9 @@
   "dependencies": {
     "gmaps.core": "^0.5.1",
     "gmaps.markers": "^0.5.0",
+    "jquery": "^3.3.1",
     "jquery-viewport-checker": "^1.8.8",
+    "jsdom": "^11.6.2",
     "node-less-chokidar": "^0.1.2",
     "normalize.css": "^7.0.0",
     "npm-run-all": "^4.1.2",
