@@ -86,7 +86,7 @@ class SecondLevel extends Component {
                 infoWindow: {
                     content: content,
                     maxWidth: 134,
-                    ready: (function (e) {
+                    load: (function (e) {
                         this.setState({key: Math.random()});
                         console.log(this.state)
                     }).bind(this)
@@ -96,7 +96,6 @@ class SecondLevel extends Component {
                     console.log(this.state)
                 }).bind(this),
                 mousedown: (function (e) {
-                    console.log("mouseDown");
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this),
@@ -105,12 +104,14 @@ class SecondLevel extends Component {
                     console.log(this.state)
                 }).bind(this),
                 focus: (function (e) {
-                    console.log("mouseDown");
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this),
                 pageshow: (function (e) {
-                    console.log("mouseDown");
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                }).bind(this),
+                mouseover: (function (e) {
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this)
