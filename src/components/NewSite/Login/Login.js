@@ -44,7 +44,7 @@ class Login extends Component {
                     <div className="n_login__main__right">
                         <div className="n_login__main__right__container">
                             <p className="n_login__main__right__container__text">Вход</p>
-                            <a className="n_login__main__right__container__a">
+                            <a href="/web" className="n_login__main__right__container__a">
                                 <div className="n_login__main__right__container__a__vk"> </div>
                             </a>
                             <a className="n_login__main__right__container__a">
