@@ -107,11 +107,11 @@ class SecondLevel extends Component {
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this),
-                pageshow: (function (e) {
+                touchStart: (function (e) {
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this),
-                mouseover: (function (e) {
+                touchstart: (function (e) {
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this)
