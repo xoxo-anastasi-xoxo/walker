@@ -2,8 +2,35 @@ import React, {Component} from "react"
 import "./SecondLevel.css"
 import GMaps from "gmaps.core"
 import {addMarker} from "gmaps.markers"
+import $ from "jquery"
+import "./InfoWindow.css"
+import {connect} from "react-redux";
 
 class SecondLevel extends Component {
+    changeInfoWindow() {
+        let iwOuter = $('.gm-style-iw');
+        let iwBackground = iwOuter.prev();
+        // Remove the background shadow DIV
+        iwBackground.children(':nth-child(2)').css({'display': 'none'});
+        // Remove the white background DIV
+        iwBackground.children(':nth-child(4)').css({'display': 'none'});
+
+        // Moves the infowindow 115px to the right.
+        iwOuter.parent().parent().css({left: '0'});
+
+        // Changes the desired tail shadow color.
+        iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+
+        let iwCloseBtn = iwOuter.next();
+        iwCloseBtn.css({
+            //opacity: '1', // by default the close button has an opacity of 0.7
+            right: '40px', top: '20px', // button repositioning
+            background: 'none',
+            'border-radius': '13px', // circular effect
+        });
+
+    }
+
     componentDidMount() {
         const map = (new GMaps({
             div: '#map',
@@ -56,26 +83,54 @@ class SecondLevel extends Component {
             ]
         }));
 
-        map.addMarker({
-            lat: 55.763432,
-            lng: 37.65344,
-            title: 'Lima',
-            // icon: "https://yadi.sk/i/bD8cG5Yl3Sbb33",
-            infoWindow: {
-                content: '<p>HTML Content</p>'
-            }
-        });
+        for (let el of this.props.list) {
+            let content = '<div id="iw-container">' +
+                '<div id="top">' +
+                '<img id="pic" src="/img/velo.png" alt=' + el.title + '/>' +
+                '</div>' +
+                '<div id="bottom">' +
+                '<p id="name">'+ el.name+'</p>'+
+                '<p id="date">'+ el.date+'</p>'+
+                '</div>' +
+                '</div>';
+            map.addMarker({
+                lat: el.lat,
+                lng: el.lng,
+                title: el.name,
+                icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
+                infoWindow: {
+                    content: content,
+                    maxWidth: 134
+                }
+            });
+        }
+
+
     }
 
     render() {
         return (
             <div id="p2" className="n_second-level">
                 <div className="n_second-level__title">Предстоящие мероприятия</div>
-                <div id="map" className="n_second-level__map"></div>
+                <div onClick={this.changeInfoWindow} id="map" className="n_second-level__map"> </div>
                 {/*<a className="scrollto n_second-level__button" href="#p3"></a>*/}
             </div>
         );
     }
 }
 
-export default SecondLevel;
+
+const mapStateToProps = state => ({
+    list: state.main_info.eventsData
+});
+
+
+const mapDispatchToProps = dispatch => ({
+    changeAnchor: (scroll, height) => dispatch({
+        type: 'CHANGE_ANCHOR',
+        scrol: scroll,
+        height: height
+    })
+});
+
+export default connect(mapStateToProps)(SecondLevel);

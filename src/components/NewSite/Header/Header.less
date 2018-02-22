@@ -20,7 +20,8 @@
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  transform: rotate(180deg);}
+  transform: rotate(180deg);
+}
 
 .n_header {
   height: 100vh;
@@ -30,7 +31,7 @@
   min-height: 500px;
   box-sizing: border-box;
   font-family: 'Proba Pro', cursive;
-  background: fixed linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image.png") no-repeat center;
+  background: fixed linear-gradient(180deg, rgba(51, 51, 51, 0.63) 0%, rgba(51, 51, 51, 0) 92%), url("../../../img/image-min.png") no-repeat center;
   background-size: cover;
 
   &__top {
@@ -53,6 +54,7 @@
         color: white;
       }
     }
+
     &__button {
       position: sticky;
       cursor: pointer;
@@ -157,7 +159,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .n_header {
     &__top {
       &__title {
@@ -179,6 +181,9 @@
         font-size: 20px;
 
       }
+    }
+    &__button {
+      display: none;
     }
   }
 }
@@ -241,9 +246,6 @@
       &__text {
         margin: 40px 10px ;
       }
-    }
-    &__button {
-display: none;
     }
   }
 }

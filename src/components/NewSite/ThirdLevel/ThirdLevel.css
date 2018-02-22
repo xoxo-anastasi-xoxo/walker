@@ -63,6 +63,8 @@
   background-size: contain;
   width: 200px;
   height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .n_third-level__inner__right {
   width: 35%;
@@ -72,7 +74,7 @@
 }
 .n_third-level__inner__right__phone-1 {
   z-index: 2;
-  background: no-repeat center url("../../../img/phone_1.png");
+  background: no-repeat center url("../../../img/phone_1-min.png");
   background-size: contain;
   height: 100%;
   width: 50%;
@@ -82,7 +84,7 @@
 }
 .n_third-level__inner__right__phone-2 {
   z-index: -2;
-  background: no-repeat center url("../../../img/phone_0.png");
+  background: no-repeat center url("../../../img/phone_0-min.png");
   background-size: contain;
   height: 100%;
   width: 50%;

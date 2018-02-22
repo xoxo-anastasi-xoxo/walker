@@ -17,7 +17,7 @@
   font-family: 'Proba Pro', cursive;
   min-width: 300px;
   min-height: 500px;
-  background: fixed url("../../../img/Login.png") no-repeat center;
+  background: fixed url("../../../img/Login-min.png") no-repeat center;
   background-size: cover;
 }
 .n_login__main {
