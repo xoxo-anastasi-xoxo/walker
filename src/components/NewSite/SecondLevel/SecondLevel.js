@@ -7,28 +7,12 @@ import "./InfoWindow.css"
 import {connect} from "react-redux";
 
 class SecondLevel extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {key: 0};
+    }
     changeInfoWindow() {
-        let iwOuter = $('.gm-style-iw');
-        let iwBackground = iwOuter.prev();
-        // Remove the background shadow DIV
-        iwBackground.children(':nth-child(2)').css({'display': 'none'});
-        // Remove the white background DIV
-        iwBackground.children(':nth-child(4)').css({'display': 'none'});
-
-        // Moves the infowindow 115px to the right.
-        iwOuter.parent().parent().css({left: '0'});
-
-        // Changes the desired tail shadow color.
-        iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
-
-        let iwCloseBtn = iwOuter.next();
-        iwCloseBtn.css({
-            //opacity: '1', // by default the close button has an opacity of 0.7
-            right: '40px', top: '20px', // button repositioning
-            background: 'none',
-            'border-radius': '13px', // circular effect
-        });
-
+        this.setState({ key: Math.random() });
     }
 
     componentDidMount() {
@@ -89,8 +73,8 @@ class SecondLevel extends Component {
                 '<img id="pic" src="/img/velo.png" alt=' + el.title + '/>' +
                 '</div>' +
                 '<div id="bottom">' +
-                '<p id="name">'+ el.name+'</p>'+
-                '<p id="date">'+ el.date+'</p>'+
+                '<p id="name">' + el.name + '</p>' +
+                '<p id="date">' + el.date + '</p>' +
                 '</div>' +
                 '</div>';
             map.addMarker({
@@ -104,15 +88,43 @@ class SecondLevel extends Component {
                 }
             });
         }
+    }
 
+    componentDidUpdate() {
+        let iwOuter = $('.gm-style-iw');
+        if (iwOuter) {
+            let iwBackground = iwOuter.prev();
+            // Remove the background shadow DIV
+            iwBackground.children(':nth-child(2)').css({'display': 'none'});
+            // Remove the white background DIV
+            iwBackground.children(':nth-child(4)').css({'display': 'none'});
 
+            // Moves the infowindow 115px to the right.
+            iwOuter.parent().parent().css({left: '0'});
+
+            // Changes the desired tail shadow color.
+            iwBackground.children(':nth-child(3)').find('div').children().css({
+                'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px',
+                'z-index': '1'
+            });
+
+            let iwCloseBtn = iwOuter.next();
+            iwCloseBtn.css({
+                //opacity: '1', // by default the close button has an opacity of 0.7
+                right: '40px', top: '20px', // button repositioning
+                background: 'none',
+                'border-radius': '13px', // circular effect
+            });
+        }
     }
 
     render() {
         return (
             <div id="p2" className="n_second-level">
                 <div className="n_second-level__title">Предстоящие мероприятия</div>
-                <div onClick={this.changeInfoWindow} id="map" className="n_second-level__map"> </div>
+                <div
+                    onClick={this.changeInfoWindow.bind(this)}
+                    id="map" className="n_second-level__map"> </div>
                 {/*<a className="scrollto n_second-level__button" href="#p3"></a>*/}
             </div>
         );

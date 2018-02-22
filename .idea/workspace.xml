@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee0ecbb-5b9d-4ac7-a8aa-a5cae5ce6b33" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/InfoWindow.less" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.less" afterPath="$PROJECT_DIR$/src/components/NewSite/FirstLevel/FirstLevel.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Header/Header.less" afterPath="$PROJECT_DIR$/src/components/NewSite/Header/Header.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Login/Login.css" afterPath="$PROJECT_DIR$/src/components/NewSite/Login/Login.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Login/Login.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/Login/Login.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/Login/Login.less" afterPath="$PROJECT_DIR$/src/components/NewSite/Login/Login.less" />
       <change beforePath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js" afterPath="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css.map" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.css.map" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" afterPath="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/main_info.js" afterPath="$PROJECT_DIR$/src/reducers/main_info.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,24 +16,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SecondLevel.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SecondLevel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            <state relative-caret-position="277">
+              <caret line="125" column="61" lean-forward="false" selection-start-line="125" selection-start-column="61" selection-end-line="125" selection-end-column="61" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#1401#2755#0" expanded="false" />
+                <element signature="e#599#1953#0" expanded="false" />
+                <element signature="n#!!block;n#componentDidUpdate#0;n#SecondLevel#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfoWindow.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InfoWindow.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/InfoWindow.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            <state relative-caret-position="372">
+              <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -215,8 +200,8 @@
         <option value="$PROJECT_DIR$/src/components/NewSite/ThirdLevel/ThirdLevel.less" />
         <option value="$PROJECT_DIR$/src/components/NewSite/Login/Login.less" />
         <option value="$PROJECT_DIR$/src/reducers/main_info.js" />
-        <option value="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js" />
         <option value="$PROJECT_DIR$/src/components/NewSite/SecondLevel/InfoWindow.less" />
+        <option value="$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js" />
       </list>
     </option>
   </component>
@@ -399,12 +384,12 @@
       <workItem from="1518697908502" duration="3277000" />
       <workItem from="1518701316332" duration="1367000" />
       <workItem from="1518703067291" duration="8612000" />
-      <workItem from="1519075622112" duration="67378000" />
+      <workItem from="1519075622112" duration="68994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229743000" />
+    <option name="totallyTimeSpent" value="231359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -854,17 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#1401#2755#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -875,9 +849,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/InfoWindow.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        <state relative-caret-position="372">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NewSite/SecondLevel/SecondLevel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="125" column="61" lean-forward="false" selection-start-line="125" selection-start-column="61" selection-end-line="125" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#599#1953#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidUpdate#0;n#SecondLevel#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
