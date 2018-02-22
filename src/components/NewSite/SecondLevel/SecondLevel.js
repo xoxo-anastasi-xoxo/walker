@@ -91,7 +91,7 @@ class SecondLevel extends Component {
 
                     setTimeout((function() {
                         this.setState({key: Math.random()});
-                        }).bind(this), 500);
+                        }).bind(this), 100);
                     // this.setState({key: Math.random()});
                 }).bind(this)
             });
