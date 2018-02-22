@@ -85,35 +85,16 @@ class SecondLevel extends Component {
                 icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
                 infoWindow: {
                     content: content,
-                    maxWidth: 134,
-                    load: (function (e) {
-                        // this.setState({key: Math.random()});
-                        // console.log(this.state)
-                        alert("iw load")
-                    }).bind(this)
+                    maxWidth: 134
                 },
                 click: (function (e) {
-                    // this.setState({key: Math.random()});
-                    // console.log(this.state)
-                    alert("marker click")
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                    // alert("marker click")
                 }).bind(this),
-                mousedown: (function (e) {
-                    alert("mousedown")
-                }).bind(this),
-                focus: (function (e) {
-                    alert("focus")
-
-                }).bind(this),
-                touchStart: (function (e) {
-                    alert("touchStart")
-
-                }).bind(this),
-                touchstart: (function (e) {
-                    alert("touchstart")
-                }).bind(this),
-                touchend: (function (e) {
-                    alert("touchend")
-                }).bind(this),
+                // mousedown: (function (e) {
+                //     alert("mousedown")
+                // }).bind(this)
             });
         }
     }
