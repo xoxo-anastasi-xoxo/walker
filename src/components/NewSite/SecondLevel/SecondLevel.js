@@ -99,6 +99,20 @@ class SecondLevel extends Component {
                     console.log("mouseDown");
                     this.setState({key: Math.random()});
                     console.log(this.state)
+                }).bind(this),
+                load: (function (e) {
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                }).bind(this),
+                focus: (function (e) {
+                    console.log("mouseDown");
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                }).bind(this),
+                pageshow: (function (e) {
+                    console.log("mouseDown");
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
                 }).bind(this)
             });
         }
@@ -137,6 +151,8 @@ class SecondLevel extends Component {
             <div id="p2" className="n_second-level">
                 <div className="n_second-level__title">Предстоящие мероприятия</div>
                 <div
+                    onLoad={this.changeInfoWindow.bind(this)}
+                    onFocus={this.changeInfoWindow.bind(this)}
                     onMouseDown={this.changeInfoWindow.bind(this)}
                     onClick={this.changeInfoWindow.bind(this)}
                     id="map" className="n_second-level__map"></div>
