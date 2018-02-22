@@ -16,10 +16,10 @@
 }
 
 #icon {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
@@ -89,6 +89,7 @@
   }
 
   &__menu {
+    cursor: pointer;
     position: absolute;
     right: 4%;
     top:50px;
@@ -106,6 +107,10 @@
       height: 40px;
       text-align: left;
       color: @text_color;
+
+      &:hover {
+        background-color: rgba(0,0,0,.05);
+      }
     }
   }
 }

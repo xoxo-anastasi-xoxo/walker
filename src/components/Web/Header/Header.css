@@ -11,10 +11,10 @@
   font-style: normal;
 }
 #icon {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
@@ -74,6 +74,7 @@
   background-size: cover;
 }
 .header__menu {
+  cursor: pointer;
   position: absolute;
   right: 4%;
   top: 50px;
@@ -90,4 +91,7 @@
   height: 40px;
   text-align: left;
   color: #5b5b5b;
+}
+.header__menu__item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
