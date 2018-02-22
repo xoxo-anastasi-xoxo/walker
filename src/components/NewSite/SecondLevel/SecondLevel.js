@@ -88,13 +88,12 @@ class SecondLevel extends Component {
                     maxWidth: 134
                 },
                 click: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
-                    // alert("marker click")
-                }).bind(this),
-                // mousedown: (function (e) {
-                //     alert("mousedown")
-                // }).bind(this)
+
+                    setTimeout((function() {
+                        this.setState({key: Math.random()});
+                        }).bind(this), 500);
+                    // this.setState({key: Math.random()});
+                }).bind(this)
             });
         }
     }
