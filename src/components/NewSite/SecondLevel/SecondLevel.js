@@ -85,9 +85,18 @@ class SecondLevel extends Component {
                 icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
                 infoWindow: {
                     content: content,
-                    maxWidth: 134
+                    maxWidth: 134,
+                    ready: (function (e) {
+                        this.setState({key: Math.random()});
+                        console.log(this.state)
+                    }).bind(this)
                 },
                 click: (function (e) {
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                }).bind(this),
+                mousedown: (function (e) {
+                    console.log("mouseDown");
                     this.setState({key: Math.random()});
                     console.log(this.state)
                 }).bind(this)
@@ -128,6 +137,7 @@ class SecondLevel extends Component {
             <div id="p2" className="n_second-level">
                 <div className="n_second-level__title">Предстоящие мероприятия</div>
                 <div
+                    onMouseDown={this.changeInfoWindow.bind(this)}
                     onClick={this.changeInfoWindow.bind(this)}
                     id="map" className="n_second-level__map"></div>
                 {/*<a className="scrollto n_second-level__button" href="#p3"></a>*/}
