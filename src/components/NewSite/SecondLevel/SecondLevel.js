@@ -24,11 +24,29 @@ class SecondLevel extends Component {
             zoom: 12,
             styles: [
                 {
-                    "featureType": "road",
-                    "elementType": "geometry",
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
                     "stylers": [
                         {
-                            "lightness": 100
+                            "color": "#444444"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
                         },
                         {
                             "visibility": "simplified"
@@ -36,32 +54,182 @@ class SecondLevel extends Component {
                     ]
                 },
                 {
-                    "featureType": "water",
-                    "elementType": "geometry",
+                    "featureType": "poi",
+                    "elementType": "all",
                     "stylers": [
                         {
                             "visibility": "on"
-                        },
-                        {
-                            "color": "#C6E2FF"
                         }
                     ]
                 },
                 {
                     "featureType": "poi",
-                    "elementType": "geometry.fill",
+                    "elementType": "geometry",
                     "stylers": [
                         {
-                            "color": "#C5E3BF"
+                            "visibility": "simplified"
+                        },
+                        {
+                            "saturation": "-65"
+                        },
+                        {
+                            "lightness": "45"
+                        },
+                        {
+                            "gamma": "1.78"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
                         }
                     ]
                 },
                 {
                     "featureType": "road",
-                    "elementType": "geometry.fill",
+                    "elementType": "all",
                     "stylers": [
                         {
-                            "color": "#D1D1B8"
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "saturation": "-33"
+                        },
+                        {
+                            "lightness": "22"
+                        },
+                        {
+                            "gamma": "2.08"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.airport",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "gamma": "2.08"
+                        },
+                        {
+                            "hue": "#ffa200"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.airport",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        },
+                        {
+                            "saturation": "-55"
+                        },
+                        {
+                            "lightness": "-2"
+                        },
+                        {
+                            "gamma": "1.88"
+                        },
+                        {
+                            "hue": "#ffab00"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#bbd9e5"
+                        },
+                        {
+                            "visibility": "simplified"
                         }
                     ]
                 }
@@ -89,9 +257,9 @@ class SecondLevel extends Component {
                 },
                 click: (function (e) {
 
-                    setTimeout((function() {
+                    setTimeout((function () {
                         this.setState({key: Math.random()});
-                        }).bind(this), 2);
+                    }).bind(this), 2);
                     // this.setState({key: Math.random()});
                 }).bind(this)
             });
@@ -112,8 +280,11 @@ class SecondLevel extends Component {
 
             // Changes the desired tail shadow color.
             iwBackground.children(':nth-child(3)').find('div').children().css({
-                'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px',
-                'z-index': '1'
+                'background-color': '#ededed',
+                'box-shadow': '0 1px 6px rgba(178, 178, 178, 0.6)',
+                'border-left': '1px solid rgba(87, 89, 87, 0.6)',
+                'border-right': '1px solid rgba(87, 89, 87, 0.6)',
+            'z-index': '1'
             });
 
             let iwCloseBtn = iwOuter.next();
