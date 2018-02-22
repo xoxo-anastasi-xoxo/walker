@@ -87,34 +87,33 @@ class SecondLevel extends Component {
                     content: content,
                     maxWidth: 134,
                     load: (function (e) {
-                        this.setState({key: Math.random()});
-                        console.log(this.state)
+                        // this.setState({key: Math.random()});
+                        // console.log(this.state)
+                        alert("iw load")
                     }).bind(this)
                 },
                 click: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
+                    // this.setState({key: Math.random()});
+                    // console.log(this.state)
+                    alert("marker click")
                 }).bind(this),
                 mousedown: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
-                }).bind(this),
-                load: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
+                    alert("mousedown")
                 }).bind(this),
                 focus: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
+                    alert("focus")
+
                 }).bind(this),
                 touchStart: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
+                    alert("touchStart")
+
                 }).bind(this),
                 touchstart: (function (e) {
-                    this.setState({key: Math.random()});
-                    console.log(this.state)
-                }).bind(this)
+                    alert("touchstart")
+                }).bind(this),
+                touchend: (function (e) {
+                    alert("touchend")
+                }).bind(this),
             });
         }
     }
