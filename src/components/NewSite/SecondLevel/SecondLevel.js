@@ -11,8 +11,9 @@ class SecondLevel extends Component {
         super(props);
         this.state = {key: 0};
     }
+
     changeInfoWindow() {
-        this.setState({ key: Math.random() });
+        this.setState({key: Math.random()});
     }
 
     componentDidMount() {
@@ -85,7 +86,11 @@ class SecondLevel extends Component {
                 infoWindow: {
                     content: content,
                     maxWidth: 134
-                }
+                },
+                click: (function (e) {
+                    this.setState({key: Math.random()});
+                    console.log(this.state)
+                }).bind(this)
             });
         }
     }
@@ -124,7 +129,7 @@ class SecondLevel extends Component {
                 <div className="n_second-level__title">Предстоящие мероприятия</div>
                 <div
                     onClick={this.changeInfoWindow.bind(this)}
-                    id="map" className="n_second-level__map"> </div>
+                    id="map" className="n_second-level__map"></div>
                 {/*<a className="scrollto n_second-level__button" href="#p3"></a>*/}
             </div>
         );
