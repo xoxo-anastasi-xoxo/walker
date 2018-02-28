@@ -12,27 +12,26 @@
   min-height: 300px;
   min-width: 300px;
   background: #F0F0F0;
-  overflow: hidden;
-}
-.profile-inner {
-  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
-  width: 900px;
-  height: 100%;
-  margin: 0 auto;
-  overflow-x: hidden;
   overflow-y: scroll;
   /* ie 10+ */
   -ms-overflow-style: none;
   /* фф (свойство больше не работает, других способов тоже нет)*/
   overflow: -moz-scrollbars-none;
 }
-.profile-inner::-webkit-scrollbar {
+.profile::-webkit-scrollbar {
   width: 0;
+}
+.profile-inner {
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  width: 900px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 .profile-inner__top {
   margin-left: -5%;
   width: 110%;
-  height: 30%;
+  height: 180px;
   z-index: 99;
   /* изображение размыто */
   background-size: cover;
@@ -47,7 +46,7 @@
   width: 900px;
   margin: 0 auto;
   position: absolute;
-  top: calc(30% - 120px);
+  top: 60px;
 }
 .profile-inner__user__ava {
   margin: 0 auto;
@@ -67,7 +66,7 @@
 .profile-inner__bottom {
   background: white;
   width: 100%;
-  min-height: 70%;
+  min-height: calc(100vh - 240px);
 }
 .profile-inner__bottom__menu {
   display: flex;
@@ -85,16 +84,23 @@
 .profile-inner__bottom__menu__item:hover {
   border-bottom: #2BA0DB 2px solid;
 }
-.profile-inner__bottom__menu__item__active {
+.profile-inner__bottom__menu__item-active {
+  box-sizing: border-box;
+  color: #2BA0DB;
+  width: 120px;
+  height: 39px;
+  font-size: 20px;
+  cursor: pointer;
   border-bottom: #2BA0DB 2px solid;
 }
 .profile-inner__bottom__list {
+  margin-top: 10px ;
   display: flex;
   wrap-option: wrap;
   justify-content: left;
 }
 .event {
-  width: 30%;
+  width: 32%;
   max-width: 280px;
   min-width: 134px;
   height: 300px;
@@ -102,6 +108,14 @@
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
   border-radius: 20px;
   text-align: left;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.event::-webkit-scrollbar {
+  width: 0;
 }
 .event__img {
   width: 100%;
@@ -119,4 +133,11 @@
   margin-bottom: 3px;
   font-weight: bold;
   font-size: 20px;
+}
+.event__info__description {
+  margin: 10px 0;
+}
+.event__info__users__button {
+  text-decoration: underline;
+  cursor: pointer;
 }

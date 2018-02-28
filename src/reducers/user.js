@@ -106,6 +106,8 @@ let isOpened = false;
 export default function user(state = {isNotified, userId, userAva, userName, menu, menuList,
     isOpened, userEvents, eventMenu, userEventsAdmin, userEventsOld}, action) {
     switch (action.type) {
+        case "CHANGE_EVENT_MENU":
+            return {...state, eventMenu : action.data};
         case "CHANGE_MENU":
             return {...state, menu : action.data, isOpened : !state.isOpened, eventMenu: 0};
         case "OPEN_MENU":

@@ -2,9 +2,33 @@ import React, {Component} from "react"
 import "./Event.css"
 import {connect} from "react-redux";
 import EventCard from "./EventCard"
+import $ from "jquery";
 
 class EventsMenu extends Component {
+
+    handleClick(index) {
+        this.props.changeMenu(index);
+    }
+
+
+
     render() {
+        let class1 = "profile-inner__bottom__menu__item";
+        let class2 = "profile-inner__bottom__menu__item";
+        let class3 = "profile-inner__bottom__menu__item";
+        switch (this.props.mode) {
+            case 0:
+                class1 += "-active";
+                break;
+            case 1:
+                class2 += "-active";
+                break;
+
+            case 2:
+                class3 += "-active";
+                break;
+
+        }
         return (
             <div className="profile">
                 <div className="profile-inner">
@@ -17,9 +41,12 @@ class EventsMenu extends Component {
                     </div>
                     <div className="profile-inner__bottom">
                         <div className="profile-inner__bottom__menu">
-                            <div className="profile-inner__bottom__menu__item">Мои</div>
-                            <div className="profile-inner__bottom__menu__item">Будущие</div>
-                            <div className="profile-inner__bottom__menu__item">Прошедшие</div>
+                            <div className={class1}
+                                 onClick={this.handleClick.bind(this, 0)}>Мои</div>
+                            <div className={class2}
+                                 onClick={this.handleClick.bind(this, 1)}>Будущие</div>
+                            <div className={class3}
+                                 onClick={this.handleClick.bind(this, 2)}>Прошедшие</div>
                         </div>
                         <div  className="profile-inner__bottom__list">
                             {this.props.mode === 0 && this.props.list1.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
@@ -45,8 +72,9 @@ const mapStateToProps = state => ({
 
 
 const mapDispatchToProps = dispatch => ({
-    openMenu: () => dispatch({
-        type: 'OPEN_MENU'
+    changeMenu: (data) => dispatch({
+        type: 'CHANGE_EVENT_MENU',
+        data: data
     })
 });
 
