@@ -8,7 +8,7 @@ const merits = [
 let scrollHeight = window.pageYOffset || document.documentElement.scrollTop;
 let documentHeight = document.body.clientHeight;
 
-let eventsData = [
+let pubEvents = [
     {
         name: "Велосходка vip",
         date: "2 дек. 18:00",
@@ -42,7 +42,7 @@ let eventsData = [
 ]
 
 
-export default function main_info(state = {merits, scrollHeight, documentHeight, eventsData}, action) {
+export default function main_info(state = {merits, scrollHeight, documentHeight, pubEvents}, action) {
     switch (action.type) {
         case "CHANGE_ANCHOR":
             return {...state, scrollHeight: action.scrol, documentHeight: action.height};

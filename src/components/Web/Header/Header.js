@@ -7,16 +7,17 @@ import $ from 'jquery'
 class Header extends Component {
 
     handleClick() {
-        this.props.changeMenu();
+        this.props.openMenu();
+
         const step = 180;
         let el = $('#icon');
-        let d = el.data('angle') + step
-        el.css("-webkit-transform","rotate(+"+d+"deg)");
+        let d = el.data('angle') + step;
+        el.css("-webkit-transform", "rotate(+" + d + "deg)");
         el.data('angle', d);
     }
 
     render() {
-        console.log(this.props.menu);
+        console.log(this.props.userName);
         return (
             <div className="header">
                 <a href="/" className="header__title">
@@ -45,8 +46,8 @@ const mapStateToProps = state => ({
 
 
 const mapDispatchToProps = dispatch => ({
-    changeMenu: () => dispatch({
-        type: 'CHANGE_MENU'
+    openMenu: () => dispatch({
+        type: 'OPEN_MENU'
     })
 });
 

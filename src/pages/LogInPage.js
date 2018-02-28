@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import LogIn from "../components/NewSite/Login/Login"
+import {connect} from "react-redux";
 
 class LogInPage extends Component {
     componentWillMount() {
@@ -22,15 +23,18 @@ class LogInPage extends Component {
                 "token=" + token
             ].join('&');
 
-            fetch('http://192.168.1.79:8080/users/loginvk?' + queryString, {
+            fetch('http://walkerapp.ru:8080/users/loginvk?' + queryString, {
                 method: 'GET'
             }).then(function (response) {
                 return response.json();
             }).then((value => {
-                console.log(value)
+                console.log(value);
+                this.props.userLogIn.call(this, value.serverID, value.name, value.avatar);
+                console.log('+');
+
             }));
 
-            //window.location.href = "/web/account";
+            // window.location.href = "/web";
 
         }
     }
@@ -43,5 +47,19 @@ class LogInPage extends Component {
         );
     }
 }
+const mapStateToProps = state => ({
+    documentHeight: state.main_info.documentHeight,
+    scrollHeight: state.main_info.scrollHeight
+});
 
-export default LogInPage;
+
+const mapDispatchToProps = dispatch => ({
+    userLogIn: (id, name, ava) => dispatch({
+        type: 'USER_LOGIN',
+        id: id,
+        name: name,
+        ava: ava
+    })
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogInPage);

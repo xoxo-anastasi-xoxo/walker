@@ -10,6 +10,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes show {
+  from {
+    /* начальные значения свойств CSS */
+    height: 0;
+  }
+  to {
+    /* конечные значения свойств CSS */
+    height: 120px;
+  }
+}
 #icon {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -30,6 +40,8 @@
   justify-content: space-between;
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
   color: white;
+  z-index: 3;
+  position: relative;
 }
 .header__title {
   font-family: 'Kaushan Script Regular', cursive;
@@ -74,6 +86,9 @@
   background-size: cover;
 }
 .header__menu {
+  z-index: 10;
+  animation: show .5s;
+  overflow: hidden;
   cursor: pointer;
   position: absolute;
   right: 4%;
@@ -85,6 +100,7 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .header__menu__item {
+  z-index: 10;
   width: 100%;
   box-sizing: border-box;
   padding: 7px;
@@ -94,4 +110,9 @@
 }
 .header__menu__item:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 330px) {
+  .header__title {
+    margin-left: 0;
+  }
 }
