@@ -34,16 +34,80 @@ let userEvents = [
         date: "2 дек. 18:00",
         lat: 55.771,
         lng: 37.653,
+        img: "../img/velo.png",
+        description: "dfggkh gvhb bhvh vghbjiu gv nb hg jhjyhjgjnuhjb bhb hg jh  bj k  yfgjgj."
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
         img: "../img/velo.png"
     }
 ];
+
+let userEventsOld = [
+    {
+        name: "уже не Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    }
+];
+let userEventsAdmin = [
+    {
+        name: "неВелосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    },
+    {
+        name: "Велосходка",
+        date: "2 дек. 18:00",
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png"
+    }
+];
+let eventMenu = 0;
 let menu = 0;
 let isOpened = false;
 
-export default function user(state = {isNotified, userId, userAva, userName, menu, menuList, isOpened, userEvents}, action) {
+export default function user(state = {isNotified, userId, userAva, userName, menu, menuList,
+    isOpened, userEvents, eventMenu, userEventsAdmin, userEventsOld}, action) {
     switch (action.type) {
         case "CHANGE_MENU":
-            return {...state, menu : action.data, isOpened : !state.isOpened};
+            return {...state, menu : action.data, isOpened : !state.isOpened, eventMenu: 0};
         case "OPEN_MENU":
             return {...state, isOpened : !state.isOpened};
         case "USER_LOGIN":
