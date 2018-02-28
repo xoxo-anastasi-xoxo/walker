@@ -134,6 +134,22 @@
     width: 0;
   }
 
+  &__loc {
+    background:url("../../../img/visit.svg") no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -117px;
+    left: ~"calc(100% - 40px)";
+    opacity: .6;
+cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+
+    }
+  }
 
   &__img {
     width: 100%;
@@ -145,12 +161,12 @@
   &__info {
     text-align: left;
     color: @text_color;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
 
     &__name {
       margin-bottom: 3px;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 22px;
     }
     &__date {
 

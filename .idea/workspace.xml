@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/src/components/Web/Event/Event.css" afterPath="$PROJECT_DIR$/src/components/Web/Event/Event.css" />
       <change beforePath="$PROJECT_DIR$/src/components/Web/Event/Event.css.map" afterPath="$PROJECT_DIR$/src/components/Web/Event/Event.css.map" />
       <change beforePath="$PROJECT_DIR$/src/components/Web/Event/Event.less" afterPath="$PROJECT_DIR$/src/components/Web/Event/Event.less" />
-      <change beforePath="$PROJECT_DIR$/src/components/Web/Event/EventCard.js" afterPath="$PROJECT_DIR$/src/components/Web/Event/EventCard.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Web/Event/EventsMenu.js" afterPath="$PROJECT_DIR$/src/components/Web/Event/EventsMenu.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/user.js" afterPath="$PROJECT_DIR$/src/reducers/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,8 +75,8 @@
       <file leaf-file-name="EventCard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Web/Event/EventCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="170">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -112,32 +109,26 @@
       <file leaf-file-name="Event.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Web/Event/Event.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+            <state relative-caret-position="442">
+              <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
               <folding>
-                <element signature="e#1314#1812#0" expanded="false" />
+                <element signature="e#1828#2700#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/main_info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
+      <file leaf-file-name="visit.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/img/visit.svg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfoWindow.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Web/Map/InfoWindow.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="33" selection-end-column="32" />
-              <folding />
-            </state>
+      <file leaf-file-name="plus.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/img/plus.svg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -164,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/img/friend_2.svg" />
-        <option value="$PROJECT_DIR$/src/img/plus.svg" />
         <option value="$PROJECT_DIR$/src/components/Web/Menu/FriendMenu/FriendCard.js" />
         <option value="$PROJECT_DIR$/src/components/Web/Menu/Menu.less" />
         <option value="$PROJECT_DIR$/src/components/Site/LogIn/SocialNetwork.js" />
@@ -214,6 +203,8 @@
         <option value="$PROJECT_DIR$/src/components/Web/Event/EventCard.js" />
         <option value="$PROJECT_DIR$/src/reducers/user.js" />
         <option value="$PROJECT_DIR$/src/components/Web/Event/EventsMenu.js" />
+        <option value="$PROJECT_DIR$/src/img/icons8-visit-filled.svg" />
+        <option value="$PROJECT_DIR$/src/img/visit.svg" />
         <option value="$PROJECT_DIR$/src/components/Web/Event/Event.less" />
       </list>
     </option>
@@ -281,21 +272,6 @@
               <item name="walker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NewSite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="walker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="walker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NewSite" type="462c0819:PsiDirectoryNode" />
-              <item name="SecondLevel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="walker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="walker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,6 +297,12 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
               <item name="Map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="walker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="walker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="walker" type="b2602c69:ProjectViewProjectNode" />
@@ -407,12 +389,12 @@
       <workItem from="1519686053927" duration="297000" />
       <workItem from="1519693378811" duration="42000" />
       <workItem from="1519726753242" duration="122000" />
-      <workItem from="1519800806553" duration="19222000" />
+      <workItem from="1519800806553" duration="20258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280656000" />
+    <option name="totallyTimeSpent" value="281692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -471,9 +453,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Web/Menu/Menu.less" />
-    <entry file="file://$PROJECT_DIR$/src/components/Site/Header/Header.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Site/Header/Menu.js" />
     <entry file="file://$PROJECT_DIR$/src/components/NewSite/FirstLevel/Line.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -807,22 +786,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/icons8-visit-filled.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/plus.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Web/Event/EventCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/visit.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Web/Event/Event.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        <state relative-caret-position="442">
+          <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
           <folding>
-            <element signature="e#1314#1812#0" expanded="false" />
+            <element signature="e#1828#2700#0" expanded="false" />
           </folding>
         </state>
       </provider>
