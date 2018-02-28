@@ -315,7 +315,7 @@ class SecondLevel extends Component {
 
 
 const mapStateToProps = state => ({
-    list: state.main_info.eventsData
+    list: state.main_info.pubEvents
 });
 
 

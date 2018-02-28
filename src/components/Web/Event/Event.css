@@ -12,6 +12,7 @@
   min-height: 300px;
   min-width: 300px;
   background: #F0F0F0;
+  overflow: hidden;
 }
 .profile-inner {
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
@@ -20,6 +21,13 @@
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.profile-inner::-webkit-scrollbar {
+  width: 0;
 }
 .profile-inner__top {
   margin-left: -5%;
@@ -97,8 +105,18 @@
 }
 .event__img {
   width: 100%;
-  height: 30%;
+  height: 40%;
   background: no-repeat center;
   background-size: cover;
   border-radius: 20px 20px 0 0;
+}
+.event__info {
+  text-align: left;
+  color: #5b5b5b;
+  padding: 10px;
+}
+.event__info__name {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 20px;
 }
