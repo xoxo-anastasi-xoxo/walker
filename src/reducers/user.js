@@ -373,10 +373,32 @@ let menu = 0;
 let isOpened = false;
 let count = 0;
 
+let userGroup = [
+    {
+        name: "Название",
+        img: "../img/velo.png",
+        isOpened: false,
+        groups: [
+            "Nana",
+            "Пуум",
+            "Nana",
+            "Пуум",
+            "Nana",
+            "Пуум",
+            "Nana",
+            "Пуум",
+            "Nana",
+            "Пуум",
+            "Nana",
+            "Пуум"
+        ]
+    }
+]
+
 export default function user(state = {
     userId, userAva, userName, menu, menuList,
     isOpened, userEvents, eventMenu, userEventsAdmin, userEventsOld, count,
-    lat, lng, zoom
+    lat, lng, zoom, userGroup
 }, action) {
     switch (action.type) {
         case "MOVE_TO_MAP":
@@ -400,7 +422,11 @@ export default function user(state = {
                     newlist[action.index].isOpened = !newlist[action.index].isOpened;
                     return {...state, userEventsOld: newlist, count: state.count + 1};
             }
-        case "CHANGE_EVENT_MENU":
+        case "OPEN_USERS_MENU":
+            newlist = state.userGroup.slice();
+            newlist[action.index].isOpened = !newlist[action.index].isOpened;
+            return {...state, userGroup: newlist, count: state.count + 1};
+            case "CHANGE_EVENT_MENU":
             return {...state, eventMenu: action.data};
         case "CHANGE_MENU":
             return {...state, menu: action.data, isOpened: false, eventMenu: 0};
