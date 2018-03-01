@@ -23,7 +23,6 @@
     width: 0;
   }
 
-
   &-inner {
     box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
     width: 900px;
@@ -84,7 +83,7 @@
         &__item {
           box-sizing: border-box;
           color: @main_color;
-          width: 120px;
+          width: 140px;
           height: 39px;
           font-size: 20px;
           cursor: pointer;
@@ -96,7 +95,7 @@
           &-active {
             box-sizing: border-box;
             color: @main_color;
-            width: 120px;
+            width: 140px;
             height: 39px;
             font-size: 20px;
             cursor: pointer;
@@ -106,9 +105,9 @@
       }
 
       &__list {
-        margin-top:10px ;
+        margin-top: 10px;
         display: flex;
-        wrap-option: wrap;
+        flex-wrap: wrap;
         justify-content: left;
       }
     }
@@ -135,7 +134,7 @@
   }
 
   &__loc {
-    background:url("../../../img/visit.svg") no-repeat center;
+    background: url("../../../img/visit.svg") no-repeat center;
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -143,7 +142,7 @@
     top: -117px;
     left: ~"calc(100% - 40px)";
     opacity: .6;
-cursor: pointer;
+    cursor: pointer;
 
     &:hover {
       opacity: .9;

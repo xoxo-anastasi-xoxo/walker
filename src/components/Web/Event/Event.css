@@ -76,7 +76,7 @@
 .profile-inner__bottom__menu__item {
   box-sizing: border-box;
   color: #2BA0DB;
-  width: 120px;
+  width: 140px;
   height: 39px;
   font-size: 20px;
   cursor: pointer;
@@ -87,16 +87,16 @@
 .profile-inner__bottom__menu__item-active {
   box-sizing: border-box;
   color: #2BA0DB;
-  width: 120px;
+  width: 140px;
   height: 39px;
   font-size: 20px;
   cursor: pointer;
   border-bottom: #2BA0DB 2px solid;
 }
 .profile-inner__bottom__list {
-  margin-top: 10px ;
+  margin-top: 10px;
   display: flex;
-  wrap-option: wrap;
+  flex-wrap: wrap;
   justify-content: left;
 }
 .event {

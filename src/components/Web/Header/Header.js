@@ -17,7 +17,6 @@ class Header extends Component {
     }
 
     render() {
-        console.log(this.props.userName);
         return (
             <div className="header">
                 <a href="/" className="header__title">

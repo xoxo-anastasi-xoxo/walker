@@ -19,9 +19,9 @@ class Map extends Component {
     componentDidMount() {
         const map = (new GMaps({
             div: '#map',
-            lat: 55.76,
-            lng: 37.64,
-            zoom: 12,
+            lat: this.props.lat,
+            lng: this.props.lng,
+            zoom: this.props.zoom,
             styles: [
                 {
                     "featureType": "administrative",
@@ -233,7 +233,10 @@ class Map extends Component {
                         }
                     ]
                 }
-            ]
+            ],
+            dblclick: function (e) {
+                alert('click');
+            },
         }));
 
         for (let el of this.props.list) {
@@ -327,13 +330,13 @@ class Map extends Component {
 
     render() {
         return (
-                <div height="100%"
-                    onLoad={this.changeInfoWindow.bind(this)}
-                    onFocus={this.changeInfoWindow.bind(this)}
-                    onMouseDown={this.changeInfoWindow.bind(this)}
-                    onClick={this.changeInfoWindow.bind(this)}
-                    id="map" className="map"
-                />
+            <div height="100%"
+                 onLoad={this.changeInfoWindow.bind(this)}
+                 onFocus={this.changeInfoWindow.bind(this)}
+                 onMouseDown={this.changeInfoWindow.bind(this)}
+                 onClick={this.changeInfoWindow.bind(this)}
+                 id="map" className="map"
+            />
         );
     }
 }
@@ -341,7 +344,10 @@ class Map extends Component {
 
 const mapStateToProps = state => ({
     list: state.main_info.pubEvents,
-    list2: state.user.userEvents
+    list2: state.user.userEvents,
+    lat: state.user.lat,
+    lng: state.user.lng,
+    zoom: state.user.zoom
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -29,6 +29,7 @@ class EventsMenu extends Component {
                 break;
 
         }
+
         return (
             <div className="profile">
                 <div className="profile-inner">
@@ -44,7 +45,7 @@ class EventsMenu extends Component {
                             <div className={class1}
                                  onClick={this.handleClick.bind(this, 0)}>Мои</div>
                             <div className={class2}
-                                 onClick={this.handleClick.bind(this, 1)}>Будущие</div>
+                                 onClick={this.handleClick.bind(this, 1)}>Предстоящие</div>
                             <div className={class3}
                                  onClick={this.handleClick.bind(this, 2)}>Прошедшие</div>
                         </div>
