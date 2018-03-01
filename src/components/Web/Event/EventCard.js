@@ -9,8 +9,8 @@ class EventCard extends Component {
 
 
     handleLocationClick() {
-        console.log("handleLocationClick");
-        this.props.moveToMap(this.props.lat, this.props.lng);
+        this.props.changeMenu(0);
+        this.props.moveToMap(this.props.el.lat, this.props.el.lng);
     }
 
     render() {
@@ -19,7 +19,8 @@ class EventCard extends Component {
                 <div className="event__img"
                      style={{backgroundImage: 'url("' + this.props.el.img + '")'}}> </div>
                 {this.props.el.isEditable && <div className="event__edit"> </div>}
-                <div className="event__loc"> </div>
+                <div className="event__loc"
+                     onClick={this.handleLocationClick.bind(this)}> </div>
                 <div className="event__info">
                     <div className="event__info__name">{this.props.el.name}</div>
                     <div className="event__info__date">{this.props.el.date}</div>
@@ -54,6 +55,10 @@ const mapDispatchToProps = dispatch => ({
     openMenu: (index) => dispatch({
         type: 'OPEN_GROUPS_MENU',
         index: index
+    }),
+    changeMenu: (data) => dispatch({
+        type: 'CHANGE_MENU',
+        data: data
     }),
     moveToMap: (lat, lng) => dispatch({
         type: 'MOVE_TO_MAP',

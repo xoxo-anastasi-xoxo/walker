@@ -368,6 +368,7 @@ let userEventsAdmin = [
     }
 ];
 let eventMenu = 0;
+// Какая вкладка открыта: карта, профиль, группы...
 let menu = 0;
 let isOpened = false;
 let count = 0;
@@ -377,13 +378,11 @@ export default function user(state = {
     isOpened, userEvents, eventMenu, userEventsAdmin, userEventsOld, count,
     lat, lng, zoom
 }, action) {
-
-    console.log("user");
     switch (action.type) {
         case "MOVE_TO_MAP":
             return {
-                ...state, menu: 0, isOpened: false, eventMenu: 0,
-                lng: action.lng, lat: action.lat, zoom: 15
+                ...state,zoom: 20,
+                lng: action.lng, lat: action.lat
             };
         case "OPEN_GROUPS_MENU":
             let newlist;
@@ -404,12 +403,10 @@ export default function user(state = {
         case "CHANGE_EVENT_MENU":
             return {...state, eventMenu: action.data};
         case "CHANGE_MENU":
-            return {...state, menu: action.data, isOpened: !state.isOpened, eventMenu: 0};
+            return {...state, menu: action.data, isOpened: false, eventMenu: 0};
         case "OPEN_MENU":
             return {...state, isOpened: !state.isOpened};
         case "USER_LOGIN":
-            console.log(action.id);
-
             return {...state, userId: action.id, userAva: action.ava, userName: action.name};
         default:
             return state

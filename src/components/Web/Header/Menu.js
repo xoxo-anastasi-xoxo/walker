@@ -21,7 +21,7 @@ class Menu extends Component {
             <div className="header__menu">
                 {
                     this.props.list.map((key, index) =>
-                        index !== this.props.type &&
+                    index !== this.props.type &&
                         <div className="header__menu__item" key={index}
                              onClick={this.handleClick.bind(this, index)}>{key.title}</div>)
                 }
