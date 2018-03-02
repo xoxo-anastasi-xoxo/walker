@@ -117,8 +117,8 @@
 .event {
   width: 32%;
   max-width: 280px;
-  min-width: 134px;
-  height: 300px;
+  min-width: 240px;
+  height: 400px;
   margin: 10px;
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
   border-radius: 20px;
@@ -133,14 +133,34 @@
     width: 0;
   }
 
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 62px;
+    top: -155px;
+    left: ~"calc(100% - 70px)";
+    position: relative;
+  }
   &__loc {
     background: url("../../../img/visit.svg") no-repeat center;
     background-size: cover;
     width: 30px;
     height: 30px;
-    position: relative;
-    top: -117px;
-    left: ~"calc(100% - 40px)";
+    opacity: .6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+
+    }
+  }
+
+  &__edit {
+    background: url("../../../img/edit.svg") no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    //position: relative;
     opacity: .6;
     cursor: pointer;
 
@@ -181,4 +201,85 @@
       }
     }
   }
+}
+
+.new-event {
+  font-family: "Proba Pro", cursive;
+  width: 32%;
+  max-width: 280px;
+  min-width: 240px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border-radius: 20px;
+  text-align: left;
+
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+    &__img {
+      width: 100%;
+      height: 40%;
+      background: no-repeat center url("../../../img/default.jpg");
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
+    }
+
+    &__name {
+      border: none;
+      border-radius: 0; //закругление углов (общее)
+      -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+      -moz-border-radius: 3px; //закругление углов (FireFox)
+      -khtml-border-radius: 3px; //закругление углов (Safari)
+      background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+      outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+      height: 30px; // высота на свое усмотрение
+      width: 220px; // ширина на свое усмотрение
+      color: @text_color; //цвет шрифта в обычном состоянии
+      font-size: 18px; // Размер шрифта
+      margin: 0 10px;
+    }
+
+    &__description {
+      overflow: visible;
+      box-sizing: content-box;
+      margin: 10px;
+      border: none;
+      border-radius: 0; //закругление углов (общее)
+      -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+      -moz-border-radius: 3px; //закругление углов (FireFox)
+      -khtml-border-radius: 3px; //закругление углов (Safari)
+      background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+      outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+      min-height: 20px; // высота на свое усмотрение
+      font-size: 15px; // Размер шрифта
+      width: 220px; // ширина на свое усмотрение
+      color: @text_color; //цвет шрифта в обычном состоянии
+    }
+
+    &__loc {
+      position: relative;
+      background: url("../../../img/visit.svg") no-repeat center;
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+      top: -150px;
+      left: ~"calc(100% - 40px)";
+      opacity: .6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .9;
+
+      }
+    }
+
+
 }

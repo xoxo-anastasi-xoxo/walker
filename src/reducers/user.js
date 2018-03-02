@@ -2,9 +2,10 @@ let lat = 55.76;
 let lng = 37.64;
 let zoom = 12;
 
-let userId = 0;
-let userAva = "../../../img/Lesha.jpg";
-let userName = "Алексей";
+let token;
+let userId = -1;
+let userAva = "";
+let userName = "";
 
 let menuList = [
     {
@@ -235,6 +236,7 @@ let userEventsOld = [
 ];
 let userEventsAdmin = [
     {
+        isEditable: true,
         name: "неВелосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -257,6 +259,7 @@ let userEventsAdmin = [
         ]
     },
     {
+        isEditable: true,
         name: "Велосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -279,6 +282,7 @@ let userEventsAdmin = [
         ]
     },
     {
+        isEditable: true,
         name: "Велосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -301,6 +305,7 @@ let userEventsAdmin = [
         ]
     },
     {
+        isEditable: true,
         name: "Велосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -323,6 +328,7 @@ let userEventsAdmin = [
         ]
     },
     {
+        isEditable: true,
         name: "Велосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -345,6 +351,7 @@ let userEventsAdmin = [
         ]
     },
     {
+        isEditable: true,
         name: "Велосходка",
         date: "2 дек. 18:00",
         lat: 55.771,
@@ -393,12 +400,12 @@ let userGroup = [
             "Пуум"
         ]
     }
-]
+];
 
 export default function user(state = {
     userId, userAva, userName, menu, menuList,
     isOpened, userEvents, eventMenu, userEventsAdmin, userEventsOld, count,
-    lat, lng, zoom, userGroup
+    lat, lng, zoom, userGroup, token
 }, action) {
     switch (action.type) {
         case "MOVE_TO_MAP":

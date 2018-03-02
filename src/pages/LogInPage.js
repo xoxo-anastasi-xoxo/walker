@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import LogIn from "../components/NewSite/Login/Login"
 import {connect} from "react-redux";
+import {setCookie} from '../cookie'
 
 class LogInPage extends Component {
     componentWillMount() {
@@ -9,37 +10,22 @@ class LogInPage extends Component {
             let token = req[0].split('=')[1];
             let id = req[2].split('=')[1];
 
-            // fetch("http://192.168.1.79:8080/test/hello",{
-            //     method: 'GET'
-            //     }).then(function(response) {
-            //     return response.text();
-            //      }).then((value => {console.log(value)}));
+            setCookie("token", token,
+                {
+                    expires: "Mon, 26 Aug 2019 00:00:00 GMT"
+                });
+            setCookie("id", id,
+                {
+                    expires: "Mon, 26 Aug 2019 00:00:00 GMT"
+                });
 
-            //  let r = 'http://192.168.1.79:8080/users/loginvk'
 
-            let queryString = [
-                "integration_id=" + id,
-                "integration_type=VK",
-                "token=" + token
-            ].join('&');
-
-            fetch('http://walkerapp.ru:8080/users/loginvk?' + queryString, {
-                method: 'GET'
-            }).then(function (response) {
-                return response.json();
-            }).then((value => {
-                console.log(value);
-                this.props.userLogIn.call(this, value.serverID, value.name, value.avatar);
-                console.log('+');
-
-            }));
-
-            // window.location.href = "/web";
-
+            window.location.href = "/web/" + window.location.hash;
         }
     }
 
     render() {
+        console.log(this.props.name);
         return (
             <div className="page">
                 <LogIn/>
@@ -47,9 +33,11 @@ class LogInPage extends Component {
         );
     }
 }
+
 const mapStateToProps = state => ({
     documentHeight: state.main_info.documentHeight,
-    scrollHeight: state.main_info.scrollHeight
+    scrollHeight: state.main_info.scrollHeight,
+    name: state.user.userName
 });
 
 

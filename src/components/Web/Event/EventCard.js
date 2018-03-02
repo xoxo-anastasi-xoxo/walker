@@ -18,9 +18,10 @@ class EventCard extends Component {
             <div className="event">
                 <div className="event__img"
                      style={{backgroundImage: 'url("' + this.props.el.img + '")'}}> </div>
-                {this.props.el.isEditable && <div className="event__edit"> </div>}
+                <div  className="event__buttons">
+                {this.props.el.isEditable ? <div className="event__edit"> </div>:<div style={{width: "30px", height: "30px"}}> </div>}
                 <div className="event__loc"
-                     onClick={this.handleLocationClick.bind(this)}> </div>
+                     onClick={this.handleLocationClick.bind(this)}> </div></div>
                 <div className="event__info">
                     <div className="event__info__name">{this.props.el.name}</div>
                     <div className="event__info__date">{this.props.el.date}</div>

@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import "./Event.css"
 import {connect} from "react-redux";
 import EventCard from "./EventCard"
+import CreatingEventCard from  "./CreatingEventCard"
 import $ from "jquery";
 
 class EventsMenu extends Component {
@@ -53,6 +54,8 @@ class EventsMenu extends Component {
                             {this.props.mode === 0 && this.props.list1.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
                             {this.props.mode === 1 && this.props.list2.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
                             {this.props.mode === 2 && this.props.list3.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
+                            <CreatingEventCard/>
+
                         </div>
                     </div>
                 </div>

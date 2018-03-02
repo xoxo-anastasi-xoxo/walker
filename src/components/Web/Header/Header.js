@@ -5,7 +5,6 @@ import Menu from "./Menu";
 import $ from 'jquery'
 
 class Header extends Component {
-
     handleClick() {
         this.props.openMenu();
 

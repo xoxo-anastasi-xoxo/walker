@@ -102,8 +102,8 @@
 .event {
   width: 32%;
   max-width: 280px;
-  min-width: 134px;
-  height: 300px;
+  min-width: 240px;
+  height: 400px;
   margin: 10px;
   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
   border-radius: 20px;
@@ -117,18 +117,34 @@
 .event::-webkit-scrollbar {
   width: 0;
 }
+.event__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  top: -155px;
+  left: calc(100% - 70px);
+  position: relative;
+}
 .event__loc {
   background: url("../../../img/visit.svg") no-repeat center;
   background-size: cover;
   width: 30px;
   height: 30px;
-  position: relative;
-  top: -117px;
-  left: calc(100% - 40px);
   opacity: .6;
   cursor: pointer;
 }
 .event__loc:hover {
+  opacity: .9;
+}
+.event__edit {
+  background: url("../../../img/edit.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+  cursor: pointer;
+}
+.event__edit:hover {
   opacity: .9;
 }
 .event__img {
@@ -154,4 +170,74 @@
 .event__info__users__button {
   text-decoration: underline;
   cursor: pointer;
+}
+.new-event {
+  font-family: "Proba Pro", cursive;
+  width: 32%;
+  max-width: 280px;
+  min-width: 240px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border-radius: 20px;
+  text-align: left;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.new-event::-webkit-scrollbar {
+  width: 0;
+}
+.new-event__img {
+  width: 100%;
+  height: 40%;
+  background: no-repeat center url("../../../img/default.jpg");
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.new-event__name {
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 30px;
+  width: 220px;
+  color: #5b5b5b;
+  font-size: 18px;
+  margin: 0 10px;
+}
+.new-event__description {
+  overflow: visible;
+  box-sizing: content-box;
+  margin: 10px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  min-height: 20px;
+  font-size: 15px;
+  width: 220px;
+  color: #5b5b5b;
+}
+.new-event__loc {
+  position: relative;
+  background: url("../../../img/visit.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  top: -150px;
+  left: calc(100% - 40px);
+  opacity: .6;
+  cursor: pointer;
+}
+.new-event__loc:hover {
+  opacity: .9;
 }

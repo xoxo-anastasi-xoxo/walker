@@ -1,0 +1,92 @@
+@import 'variables';
+
+.m-calendar {
+  display: inline-block;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+  }
+
+  td {
+    padding: 5px 0 ;
+    text-align: center;
+    cursor: pointer;
+    color: @color-gray;
+    border: 1px solid @color-gray;
+  }
+
+  thead {
+    td {
+      padding: 5px 0 !important;
+      color: @color-blue;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      //font-size: 12px;
+    }
+  }
+
+  tbody td {
+    padding: 5px 0 !important;
+    color: #666666;
+
+    &:hover {
+      background: @color-blue;
+      border-color: @color-blue;
+      color: @color-white;
+    }
+  }
+
+  .current-day {
+    color: @color-blue;
+    font-weight: bold;
+    padding: 5px 0 !important;
+
+  }
+
+  .prev-month,
+  .next-month {
+    padding: 5px 0 !important;
+
+    color: #999999;
+  }
+
+  .toolbar {
+    line-height: 20px;
+    color: @color-blue;
+    text-align: center;
+    margin-bottom: 13px;
+
+    button {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: #ffffff;
+      border: 1px solid @color-blue;
+      border-radius: 50%;
+      background: @color-blue;
+      font-size: 20px;
+      padding: 0;
+      text-align: center;
+      outline: 0;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .prev-month {
+      float: left;
+    }
+
+    .next-month {
+      float: right;
+    }
+
+    .current-date {
+      color: @color-blue;
+    }
+  }
+}
