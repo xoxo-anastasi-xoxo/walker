@@ -7,7 +7,7 @@ import Item from "./Item";
 class FirstLevel extends Component {
     render() {
         return (
-            <div  id ="p1" className="n_first-level">
+            <div id ="p1" className="n_first-level">
                 <div className="n_first-level__right"> </div>
                 <div className="n_first-level__left">
                     <Line/>

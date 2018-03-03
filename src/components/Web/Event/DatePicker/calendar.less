@@ -1,9 +1,11 @@
 @import 'variables';
+@import '../../../../shared';
 
 .m-calendar {
   display: inline-block;
 
   table {
+
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -38,19 +40,23 @@
       border-color: @color-blue;
       color: @color-white;
     }
+
+    .current-day {
+      color: @main_color;
+      font-weight: bold;
+      padding: 5px 0 !important;
+    }
   }
 
   .current-day {
-    color: @color-blue;
+    color: @main_color;
     font-weight: bold;
     padding: 5px 0 !important;
-
   }
 
   .prev-month,
   .next-month {
     padding: 5px 0 !important;
-
     color: #999999;
   }
 

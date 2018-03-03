@@ -12,10 +12,11 @@
   text-align: center;
   cursor: pointer;
   color: #dfe0e4;
+  border: 1px solid #dfe0e4;
 }
 .m-calendar thead td {
   padding: 5px 0 !important;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -25,12 +26,17 @@
   color: #666666;
 }
 .m-calendar tbody td:hover {
-  background: #1385e5;
-  border-color: #1385e5;
+  background: rgba(0, 0, 0, 0.68);
+  border-color: rgba(0, 0, 0, 0.68);
   color: #ffffff;
 }
+.m-calendar tbody td .current-day {
+  color: #2BA0DB;
+  font-weight: bold;
+  padding: 5px 0 !important;
+}
 .m-calendar .current-day {
-  color: #1385e5;
+  color: #2BA0DB;
   font-weight: bold;
   padding: 5px 0 !important;
 }
@@ -41,7 +47,7 @@
 }
 .m-calendar .toolbar {
   line-height: 20px;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   text-align: center;
   margin-bottom: 13px;
 }
@@ -51,9 +57,9 @@
   height: 30px;
   line-height: 30px;
   color: #ffffff;
-  border: 1px solid #1385e5;
+  border: 1px solid rgba(0, 0, 0, 0.68);
   border-radius: 50%;
-  background: #1385e5;
+  background: rgba(0, 0, 0, 0.68);
   font-size: 20px;
   padding: 0;
   text-align: center;
@@ -68,7 +74,7 @@
   float: right;
 }
 .m-calendar .toolbar .current-date {
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
 }
 .m-time {
   color: #ffffff;
@@ -81,7 +87,7 @@
   display: inline-block;
   font-size: 32px;
   font-weight: bold;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   width: 32px;
   height: 65px;
   line-height: 65px;
@@ -91,7 +97,7 @@
   position: relative;
   left: -10px;
   font-size: 15px;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   margin-top: 7px;
   margin-bottom: 10px;
 }
@@ -104,7 +110,7 @@
   display: inline-block;
   font-size: 38px;
   line-height: 65px;
-  background-color: #1385e5;
+  background-color: rgba(0, 0, 0, 0.68);
   border-radius: 3px;
   text-align: center;
 }
@@ -119,7 +125,7 @@
 }
 .u-slider-time .value {
   position: absolute;
-  background-color: #1385e5;
+  background-color: rgba(0, 0, 0, 0.68);
   border-radius: 3px;
   top: 0;
   height: 100%;
@@ -138,7 +144,7 @@
   width: 24px;
   height: 24px;
   background-color: #fff;
-  border: 3px solid #1385e5;
+  border: 3px solid rgba(0, 0, 0, 0.68);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -167,11 +173,11 @@
 .m-input-moment .options button {
   float: left;
   width: 50%;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   text-align: center;
   font-size: 16px;
   padding: 7px;
-  border: 1px solid #1385e5;
+  border: 1px solid rgba(0, 0, 0, 0.68);
   border-radius: 3px;
 }
 .m-input-moment .options button:first-child {
@@ -184,7 +190,7 @@
 }
 .m-input-moment .options button.is-active {
   color: #ffffff;
-  background-color: #1385e5;
+  background-color: rgba(0, 0, 0, 0.68);
 }
 .m-input-moment .tab {
   display: none;
@@ -196,7 +202,7 @@
 .m-input-moment .btn-save {
   display: block;
   width: 100%;
-  background-color: #1385e5;
+  background-color: rgba(0, 0, 0, 0.68);
   padding: 12px 0;
   text-align: center;
   color: #ffffff;

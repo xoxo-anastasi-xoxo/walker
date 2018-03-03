@@ -1,13 +1,12 @@
 const merits = [
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
-    "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "Бизнес-встречи в один клик",
+    "Возможность найти единомышленников",
+    "Организация публичных мероприятий и вечеринок одним щелчком",
+    "Карта всегда покажет события рядом с тобой"
 ];
 
 let scrollHeight = window.pageYOffset || document.documentElement.scrollTop;
 let documentHeight = document.body.clientHeight;
-
 let pubEvents = [
     {
         name: "Велосходка vip",
@@ -44,6 +43,23 @@ let pubEvents = [
 
 export default function main_info(state = {merits, scrollHeight, documentHeight, pubEvents}, action) {
     switch (action.type) {
+        case "UPLOAD_EVENTS":
+            for (let el of action.list) {
+                fetch('http://walkerapp.ru:8080/events/get_public?event_id=' + el.id, {
+                    method: 'GET'
+                }).then(function (response) {
+                    return response.json();
+                }).then((value => {
+                    console.log(value);
+                    el.name = value.name;
+                    if (value.pathToThePicture && value.pathToThePicture!=="Error")
+                    el.pathToThePicture = "http://walkerapp.ru:8080/events/get_picture?path=" + value.pathToThePicture;
+                    else el.pathToThePicture = "/img/default.jpg";
+                            el.date = value.date;
+                }));
+            }
+            return {...state, pubEvents: action.list};
+
         case "CHANGE_ANCHOR":
             return {...state, scrollHeight: action.scrol, documentHeight: action.height};
         default:

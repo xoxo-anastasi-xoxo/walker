@@ -31,12 +31,13 @@ class Web extends Component {
                     "type=1"
                 ].join('&');
 
-                fetch('http://walkerapp.ru:8080/events/get_profile_events?' + queryString, {
+                fetch('http://walkerapp.ru:8080/events/get_big_profile_events?' + queryString, {
                     method: 'GET'
                 }).then(function (response) {
                     return response.json();
                 }).then((value => {
-                    console.log(value);
+                    console.log( value.pojoEvents);
+                    this.props.uploadEvents.call(this, value.pojoEvents);
                 }));
             }));
 
@@ -70,7 +71,10 @@ const mapDispatchToProps = dispatch => ({
         name: name,
         ava: ava
     }),
-    // loadMap
+    uploadEvents: (list) => dispatch({
+    type: 'UPLOAD_USER_EVENTS',
+    list: list
+})
 });
 
 

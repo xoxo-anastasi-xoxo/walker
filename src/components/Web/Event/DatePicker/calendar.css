@@ -16,7 +16,7 @@
 }
 .m-calendar thead td {
   padding: 5px 0 !important;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,12 +26,17 @@
   color: #666666;
 }
 .m-calendar tbody td:hover {
-  background: #1385e5;
-  border-color: #1385e5;
+  background: rgba(0, 0, 0, 0.68);
+  border-color: rgba(0, 0, 0, 0.68);
   color: #ffffff;
 }
+.m-calendar tbody td .current-day {
+  color: #2BA0DB;
+  font-weight: bold;
+  padding: 5px 0 !important;
+}
 .m-calendar .current-day {
-  color: #1385e5;
+  color: #2BA0DB;
   font-weight: bold;
   padding: 5px 0 !important;
 }
@@ -42,7 +47,7 @@
 }
 .m-calendar .toolbar {
   line-height: 20px;
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
   text-align: center;
   margin-bottom: 13px;
 }
@@ -52,9 +57,9 @@
   height: 30px;
   line-height: 30px;
   color: #ffffff;
-  border: 1px solid #1385e5;
+  border: 1px solid rgba(0, 0, 0, 0.68);
   border-radius: 50%;
-  background: #1385e5;
+  background: rgba(0, 0, 0, 0.68);
   font-size: 20px;
   padding: 0;
   text-align: center;
@@ -69,5 +74,5 @@
   float: right;
 }
 .m-calendar .toolbar .current-date {
-  color: #1385e5;
+  color: rgba(0, 0, 0, 0.68);
 }

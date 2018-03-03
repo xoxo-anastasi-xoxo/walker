@@ -1,6 +1,6 @@
-let lat = 55.76;
-let lng = 37.64;
-let zoom = 12;
+let lat = 55.67798;
+let lng = 37.27773;
+let zoom = 7;
 
 let token;
 let userId = -1;
@@ -28,210 +28,41 @@ let menuList = [
         href: "/"
     }
 ];
-let userEvents = [
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ],
-        description: "dfggkh gvhb bhvh vghbjiu gv nb hg jhjyhjgjnuhjb bhb hg jh  bj k  yfgjgj.dfggkh gvhb bhvh vghbjiu gv nb hg jhjyhjgjnuhjb bhb hg jh  bj k  yfgjgj.dfggkh gvhb bhvh vghbjiu gv nb hg jhjyhjgjnuhjb bhb hg jh  bj k  yfgjgj.dfggkh gvhb bhvh vghbjiu gv nb hg jhjyhjgjnuhjb bhb hg jh  bj k  yfgjgj."
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    }
-];
+let userEvents = [];
 
 let userEventsOld = [
+    // date 1521191760000
+    // description "Second Description"
+    // duration -263960826
+    // groupId 17
+    // groupName null
+    // id 25
+    // latitude 50
+    // longitude 50
+    // name "SecondtTestEvent"
+    // ownerId 14
+    // participants 3
+    // pathToThePicture "ChangedErrorError"
+    // privacy false
     {
-        name: "уже не Велосходка",
-        date: "2 дек. 18:00",
+        name: "Велосходка",
+        description: "Примерный маршрут: набережная, Советская, Красная поляна. Выезд через 10 мнут после сбора. Не опаздывать!",
+        date: 1521191760000,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
-
         isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
+        groupName: "Публичное событие"
     },
     {
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        description: "Примерный маршрут: набережная, Советская, Красная поляна. Выезд через 10 мнут после сбора. Не опаздывать!",
+        date: 1521191760000,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
         isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        name: "Велосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
+        groupName: "Публичное событие"
     }
 ];
 let userEventsAdmin = [
@@ -261,7 +92,7 @@ let userEventsAdmin = [
     {
         isEditable: true,
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        date: 1519722980174,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
@@ -284,7 +115,7 @@ let userEventsAdmin = [
     {
         isEditable: true,
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        date: 1519722980174,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
@@ -307,7 +138,7 @@ let userEventsAdmin = [
     {
         isEditable: true,
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        date: 1519722980174,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
@@ -330,7 +161,7 @@ let userEventsAdmin = [
     {
         isEditable: true,
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        date: 1519722980174,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
@@ -353,7 +184,7 @@ let userEventsAdmin = [
     {
         isEditable: true,
         name: "Велосходка",
-        date: "2 дек. 18:00",
+        date: 1519722980174,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
@@ -382,22 +213,15 @@ let count = 0;
 
 let userGroup = [
     {
-        name: "Название",
-        img: "../img/velo.png",
+        name: "F&F",
+        img: "../img/default.jpg",
         isOpened: false,
         groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
+            "Алексей Горбачев",
+            "Михаил Затепякин",
+            "Антон Пепеляев",
+            "Анастасия Казанцева",
+            "Владислава Вакуленко"
         ]
     }
 ];
@@ -408,9 +232,11 @@ export default function user(state = {
     lat, lng, zoom, userGroup, token
 }, action) {
     switch (action.type) {
+        case "UPLOAD_USER_EVENTS":
+            return {...state, userEvents: action.list};
         case "MOVE_TO_MAP":
             return {
-                ...state,zoom: 20,
+                ...state, zoom: 20,
                 lng: action.lng, lat: action.lat
             };
         case "OPEN_GROUPS_MENU":
@@ -429,11 +255,16 @@ export default function user(state = {
                     newlist[action.index].isOpened = !newlist[action.index].isOpened;
                     return {...state, userEventsOld: newlist, count: state.count + 1};
             }
+        case "START_EDIT":
+            newlist = state.userEventsAdmin.slice();
+            newlist[action.index].edit = true;
+            return {...state, userEventsAdmin: newlist, count: state.count + 1};
+
         case "OPEN_USERS_MENU":
             newlist = state.userGroup.slice();
             newlist[action.index].isOpened = !newlist[action.index].isOpened;
             return {...state, userGroup: newlist, count: state.count + 1};
-            case "CHANGE_EVENT_MENU":
+        case "CHANGE_EVENT_MENU":
             return {...state, eventMenu: action.data};
         case "CHANGE_MENU":
             return {...state, menu: action.data, isOpened: false, eventMenu: 0};

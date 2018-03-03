@@ -45,7 +45,7 @@ export default class InputMoment extends Component {
         return (
             <div className={cls} {...props}>
                 <div className="options">
-                    <button
+                   <button
                         type="button"
                         className={cx('ion-calendar im-btn', { 'is-active': tab === 0 })}
                         onClick={e => this.handleClickTab(e, 0)}
@@ -79,16 +79,6 @@ export default class InputMoment extends Component {
                         />
                     </div>
                 }
-
-                {this.props.onSave ? (
-                    <button
-                        type="button"
-                        className="im-btn btn-save ion-checkmark"
-                        onClick={this.handleSave}
-                    >
-                        Сохранить
-                    </button>
-                ) : null}
             </div>
         );
     }

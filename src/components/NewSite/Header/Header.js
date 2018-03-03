@@ -33,8 +33,8 @@ class Header extends Component {
                 <div className="n_header__bottom">
                     <div className="n_header__bottom__title">Explore the&nbsp;new&nbsp;way to&nbsp;create&nbsp;events
                     </div>
-                    <div className="n_header__bottom__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <div className="n_header__bottom__text">
+                        Общение - это жизнь.<br/>Живи и радуйся жизни со старыми друзьями и новыми знакомыми.<br/>Создай свое первое мероприятие прямо сейчас!
                     </div>
                 </div>
 

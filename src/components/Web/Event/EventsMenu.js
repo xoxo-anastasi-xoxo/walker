@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import "./Event.css"
 import {connect} from "react-redux";
 import EventCard from "./EventCard"
-import CreatingEventCard from  "./CreatingEventCard"
+import CreatingEventCard from "./CreatingEventCard"
 import $ from "jquery";
 
 class EventsMenu extends Component {
@@ -10,7 +10,6 @@ class EventsMenu extends Component {
     handleClick(index) {
         this.props.changeMenu(index);
     }
-
 
 
     render() {
@@ -44,17 +43,28 @@ class EventsMenu extends Component {
                     <div className="profile-inner__bottom">
                         <div className="profile-inner__bottom__menu">
                             <div className={class1}
-                                 onClick={this.handleClick.bind(this, 0)}>Мои</div>
+                                 onClick={this.handleClick.bind(this, 0)}>Мои
+                            </div>
                             <div className={class2}
-                                 onClick={this.handleClick.bind(this, 1)}>Предстоящие</div>
+                                 onClick={this.handleClick.bind(this, 1)}>Предстоящие
+                            </div>
                             <div className={class3}
-                                 onClick={this.handleClick.bind(this, 2)}>Прошедшие</div>
+                                 onClick={this.handleClick.bind(this, 2)}>Прошедшие
+                            </div>
                         </div>
-                        <div  className="profile-inner__bottom__list">
-                            {this.props.mode === 0 && this.props.list1.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
-                            {this.props.mode === 1 && this.props.list2.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
-                            {this.props.mode === 2 && this.props.list3.map((key, index) => <EventCard index={index} key={index} el={key}/>)}
-                            <CreatingEventCard/>
+                        <div className="profile-inner__bottom__list">
+                            {this.props.mode === 0 && this.props.list1.map((key, index) =>
+                                key.edit ?
+                                    <CreatingEventCard index={index} key={index} el={key}/>
+                                    :
+                                    <EventCard index={index} key={index} el={key}/>
+                            )}
+                            {this.props.mode === 1 && this.props.list2.map((key, index) => <EventCard index={index}
+                                                                                                      key={index}
+                                                                                                      el={key}/>)}
+                            {this.props.mode === 2 && this.props.list3.map((key, index) => <EventCard index={index}
+                                                                                                      key={index}
+                                                                                                      el={key}/>)}
 
                         </div>
                     </div>

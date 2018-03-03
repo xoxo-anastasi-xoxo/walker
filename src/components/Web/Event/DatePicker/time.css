@@ -9,7 +9,7 @@
   display: inline-block;
   font-size: 32px;
   font-weight: bold;
-  color: #1385e5;
+  color: rgba(48, 48, 48, 0.91);
   width: 32px;
   height: 65px;
   line-height: 65px;
@@ -19,7 +19,7 @@
   position: relative;
   left: -10px;
   font-size: 15px;
-  color: #1385e5;
+  color: rgba(48, 48, 48, 0.91);
   margin-top: 7px;
   margin-bottom: 10px;
 }
@@ -32,7 +32,7 @@
   display: inline-block;
   font-size: 38px;
   line-height: 65px;
-  background-color: #1385e5;
+  background-color: rgba(48, 48, 48, 0.91);
   border-radius: 3px;
   text-align: center;
 }
