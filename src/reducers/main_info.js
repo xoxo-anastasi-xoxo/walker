@@ -79,7 +79,7 @@ const about_us = [
     {
         img: "img/Vladosik.jpg",
         name: "Владислава Вакуленко",
-        responsibility: "Frontend-разработчик"
+        responsibility: "Идейный вдохновитель"
     },
     {
         img: "img/Antosha.jpg",
