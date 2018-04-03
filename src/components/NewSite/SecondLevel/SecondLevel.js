@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import "./SecondLevel.css"
 import GMaps from "gmaps.core"
-import {addMarker} from "gmaps.markers"
 import $ from "jquery"
 import "./InfoWindow.css"
 import {connect} from "react-redux";
@@ -25,58 +24,56 @@ class SecondLevel extends Component {
 
     componentWillMount() {
         // скачать от огонька мини-дату и положить в стор
-        fetch('http://walkerapp.ru:8080/events/get_between_public?min_lat=-200&max_lat=200&min_lon=-200&max_lon=200', {
-            method: 'GET'
-        }).then(function (response) {
-            return response.json();
-        }).then((value => {
-            this.props.uploadEvents.call(this, value.pojoEvents);
-            // console.log(value.pojoEvents);
-            this.setState.call(this, {num: false});
-        }));
+        // fetch('http://walkerapp.ru:8080/events/get_between_public?min_lat=-200&max_lat=200&min_lon=-200&max_lon=200', {
+        //     method: 'GET'
+        // }).then(function (response) {
+        //     return response.json();
+        // }).then((value => {
+        //     this.props.uploadEvents.call(this, value.pojoEvents);
+        //     // console.log(value.pojoEvents);
+        //     this.setState.call(this, {num: false});
+        // }));
     }
 
     componentWillUpdate() {
-        if (this.props.list.length > 4) {
-            for (let el of this.props.list) {
-                if  (el.id !== 180 && el.id !== 158 && el.id !== 166 && el.id !== 169) {
-                let elem;
-                fetch('http://walkerapp.ru:8080/events/get_public?event_id=' + el.id, {
-                    method: 'GET'
-                }).then(function (response) {
-                    return response.json();
-                }).then((value => {
-                    elem = value;
-                }));
-
-                let content = '<div id="iw-container">' +
-                    '<div id="top">' +
-                    '<img id="pic" src="' + el.pathToThePicture
-                    + '" alt=' + el.name + ' />' +
-                    '</div>' +
-                    '<div id="bottom">' +
-                    '<p id="name">' + el.name + '</p>' +
-                    '<p id="date">' + moment(el.date).format("lll") + '</p>' +
-                    '</div>' +
-                    '</div>';
-
-                this.state.map.addMarker({
-                    lat: el.latitude,
-                    lng: el.longitude,
-                    title: this.state.currentName,
-                    icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
-                    infoWindow: {
-                        content: content,
-                        maxWidth: 134
-                    },
-                    click: (function (e) {
-                        setTimeout((function () {
-                            this.setState({key: Math.random()});
-                        }).bind(this), 2);
-                    }).bind(this)
-                });
-            }}
-        }
+        // if (this.state.map)
+    //     for (let el of this.props.list) {
+    //     // let elem;
+    //     // fetch('http://walkerapp.ru:8080/events/get_public?event_id=' + el.id, {
+    //     //     method: 'GET'
+    //     // }).then(function (response) {
+    //     //     return response.json();
+    //     // }).then((value => {
+    //     //     elem = value;
+    //     // }));
+    //
+    //     let content = '<div id="iw-container">' +
+    //         '<div id="top">' +
+    //         '<img id="pic" src="' + el.pathToThePicture
+    //         + '" alt=' + el.name + ' />' +
+    //         '</div>' +
+    //         '<div id="bottom">' +
+    //         '<p id="name">' + el.name + '</p>' +
+    //         '<p id="date">' + moment(el.date).format("lll") + '</p>' +
+    //         '</div>' +
+    //         '</div>';
+    //
+    //     this.state.map.addMarker({
+    //         lat: el.latitude,
+    //         lng: el.longitude,
+    //         title: this.state.currentName,
+    //         icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
+    //         infoWindow: {
+    //             content: content,
+    //             maxWidth: 134
+    //         },
+    //         click: (function () {
+    //             setTimeout((function () {
+    //                 this.setState({key: Math.random()});
+    //             }).bind(this), 2);
+    //         }).bind(this)
+    //     });
+    // }
     }
 
     componentDidUpdate() {
@@ -110,8 +107,7 @@ class SecondLevel extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            map: (new GMaps({
+            let map = (new GMaps({
                 div: '#map',
                 lat: 55.76,
                 lng: 37.64,
@@ -328,8 +324,45 @@ class SecondLevel extends Component {
                         ]
                     }
                 ]
-            }))
-        });
+            }));
+
+        for (let el of this.props.list) {
+            // let elem;
+            // fetch('http://walkerapp.ru:8080/events/get_public?event_id=' + el.id, {
+            //     method: 'GET'
+            // }).then(function (response) {
+            //     return response.json();
+            // }).then((value => {
+            //     elem = value;
+            // }));
+
+            let content = '<div id="iw-container">' +
+                '<div id="top">' +
+                '<img id="pic" src="' + el.img
+                + '" alt=' + el.name + ' />' +
+                '</div>' +
+                '<div id="bottom">' +
+                '<p id="name">' + el.name + '</p>' +
+                '<p id="date">' + moment(el.date).format("lll") + '</p>' +
+                '</div>' +
+                '</div>';
+
+            map.addMarker({
+                lat: el.lat,
+                lng: el.lng,
+                title: el.name,
+                icon: el.type ? "/img/Marker-1.png" : "/img/Marker.png",
+                infoWindow: {
+                    content: content,
+                    maxWidth: 134
+                },
+                click: (function () {
+                    setTimeout((function () {
+                        this.setState({key: Math.random()});
+                    }).bind(this), 2);
+                }).bind(this)
+            });
+        }
     }
 
     changeInfoWindow() {
@@ -362,10 +395,6 @@ const mapDispatchToProps = dispatch => ({
         type: 'CHANGE_ANCHOR',
         scrol: scroll,
         height: height
-    }),
-    uploadEvents: (list) => dispatch({
-        type: 'UPLOAD_EVENTS',
-        list: list
     })
 });
 

@@ -38,8 +38,8 @@ class EventCard extends Component {
         return (
             <div className="event">
                 <div className="event__img"
-                     style={{backgroundImage: 'url("../../../img/default.jpg")'}}> </div>
-                {/*style={{backgroundImage: 'url("' + this.props.el.img + '")'}}> </div>*/}
+                     // style={{backgroundImage: 'url("../../../img/default.jpg")'}}> </div>
+                style={{backgroundImage: 'url("' + this.props.el.img + '")'}}> </div>
                 <div  className="event__buttons">
                 {this.props.el.isEditable ? <div className="event__edit"
                                                  onClick={this.handleEditClick.bind(this)}> </div>:<div style={{width: "30px", height: "30px"}}> </div>}

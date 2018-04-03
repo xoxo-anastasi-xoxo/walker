@@ -1,11 +1,11 @@
-let lat = 55.67798;
-let lng = 37.27773;
-let zoom = 7;
+let lat = 55.761;
+let lng = 37.653;
+let zoom = 12;
 
 let token;
 let userId = -1;
-let userAva = "";
-let userName = "";
+let userAva = "../img/Lesha.jpg";
+let userName = "Алексей";
 
 let menuList = [
     {
@@ -28,22 +28,54 @@ let menuList = [
         href: "/"
     }
 ];
-let userEvents = [];
+let userEvents = [
+
+    {
+        name: "Велосходка",
+        description: "Моёёёё",
+        date: 1521191760000,
+        lat: 55.771,
+        lng: 37.653,
+        img: "../img/velo.png",
+        isOpened: false,
+        groupName: "Публичное событие"
+    },
+    {
+        name: "Велосходка vip",
+        date: 1521191760000,
+        lat: 55.761,
+        lng: 37.653,
+        img: "../img/velo.png",
+        type: "priv",
+        groupName: "Публичное событие"
+    },
+    {
+        name: "Велосходка_1",
+        date: 1521191760000,
+        lat: 55.763,
+        lng: 37.62,
+        img: "../img/velo.png",
+        groupName: "Публичное событие"
+    },
+    {
+        name: "Велосходка vip_2",
+        date: 1521191760000,
+        lat: 55.73,
+        lng: 37.61,
+        img: "../img/velo.png",
+        type: "priv",
+        groupName: "Публичное событие"
+    },
+    {
+        name: "Велосходка_2",
+        date: 1521191760000,
+        lat: 55.74,
+        lng: 37.61,
+        img: "../img/velo.png",
+        groupName: "F&F"
+    }];
 
 let userEventsOld = [
-    // date 1521191760000
-    // description "Second Description"
-    // duration -263960826
-    // groupId 17
-    // groupName null
-    // id 25
-    // latitude 50
-    // longitude 50
-    // name "SecondtTestEvent"
-    // ownerId 14
-    // participants 3
-    // pathToThePicture "ChangedErrorError"
-    // privacy false
     {
         name: "Велосходка",
         description: "Примерный маршрут: набережная, Советская, Красная поляна. Выезд через 10 мнут после сбора. Не опаздывать!",
@@ -67,142 +99,14 @@ let userEventsOld = [
 ];
 let userEventsAdmin = [
     {
-        isEditable: true,
-        name: "неВелосходка",
-        date: "2 дек. 18:00",
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        isEditable: true,
         name: "Велосходка",
-        date: 1519722980174,
+        description: "Моёёёё",
+        date: 1521191760000,
         lat: 55.771,
         lng: 37.653,
         img: "../img/velo.png",
         isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        isEditable: true,
-        name: "Велосходка",
-        date: 1519722980174,
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        isEditable: true,
-        name: "Велосходка",
-        date: 1519722980174,
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        isEditable: true,
-        name: "Велосходка",
-        date: 1519722980174,
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
-    },
-    {
-        isEditable: true,
-        name: "Велосходка",
-        date: 1519722980174,
-        lat: 55.771,
-        lng: 37.653,
-        img: "../img/velo.png",
-        isOpened: false,
-        groups: [
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум",
-            "Nana",
-            "Пуум"
-        ]
+        groupName: "Публичное событие"
     }
 ];
 let eventMenu = 0;

@@ -11,8 +11,7 @@ class Map extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            key: 0,
-            map: undefined
+            key: 0
         };
     }
 
@@ -21,260 +20,260 @@ class Map extends Component {
     }
 
     componentDidMount() {
-        this.setState({map: (new GMaps({
-                div: '#map',
-                lat: this.props.lat,
-                lng: this.props.lng,
-                zoom: this.props.zoom,
-                styles: [
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#444444"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative.locality",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f2f2f2"
-                            },
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            },
-                            {
-                                "saturation": "-65"
-                            },
-                            {
-                                "lightness": "45"
-                            },
-                            {
-                                "gamma": "1.78"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 45
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit.line",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "saturation": "-33"
-                            },
-                            {
-                                "lightness": "22"
-                            },
-                            {
-                                "gamma": "2.08"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit.station.airport",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "gamma": "2.08"
-                            },
-                            {
-                                "hue": "#ffa200"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit.station.airport",
-                        "elementType": "labels",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit.station.rail",
-                        "elementType": "labels.text",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit.station.rail",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            },
-                            {
-                                "saturation": "-55"
-                            },
-                            {
-                                "lightness": "-2"
-                            },
-                            {
-                                "gamma": "1.88"
-                            },
-                            {
-                                "hue": "#ffab00"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#bbd9e5"
-                            },
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    }
-                ],
-                dblclick: function (e) {
-                    alert('click');
-                    // новое событие огоньку
-                    // перейти на мои вниз
+        let map = (new GMaps({
+            div: '#map',
+            lat: this.props.lat,
+            lng: this.props.lng,
+            zoom: this.props.zoom,
+            styles: [
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#444444"
+                        }
+                    ]
                 },
-            }))});
+                {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        },
+                        {
+                            "saturation": "-65"
+                        },
+                        {
+                            "lightness": "45"
+                        },
+                        {
+                            "gamma": "1.78"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "saturation": "-33"
+                        },
+                        {
+                            "lightness": "22"
+                        },
+                        {
+                            "gamma": "2.08"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.airport",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "gamma": "2.08"
+                        },
+                        {
+                            "hue": "#ffa200"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.airport",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        },
+                        {
+                            "saturation": "-55"
+                        },
+                        {
+                            "lightness": "-2"
+                        },
+                        {
+                            "gamma": "1.88"
+                        },
+                        {
+                            "hue": "#ffab00"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#bbd9e5"
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                }
+            ],
+            dblclick: function (e) {
+                alert('click');
+                // новое событие огоньку
+                // перейти на мои вниз
+            },
+        }));
+
+        for (let el of this.props.list) {
+            let content = '<div id="iw-container">' +
+                '<div id="top">' +
+                '<img id="pic" src='+el.img+' alt=' + el.name + '/>' +
+                '</div>' +
+                '<div id="bottom">' +
+                '<p id="name">' + el.name + '</p>' +
+                '<p id="date">' + moment(el.date).format("lll") + '</p>' +
+                '</div>' +
+                '</div>';
+            map.addMarker({
+                lat: el.lat,
+                lng: el.lng,
+                title: el.name,
+                icon: "/img/Marker.png",
+                infoWindow: {
+                    content: content,
+                    maxWidth: 134
+                },
+                click: (function (e) {
+                    setTimeout((function () {
+                        this.setState({key: Math.random()});
+                    }).bind(this), 2);
+                }).bind(this)
+            });
+        }
+
     }
 
     componentWillUpdate() {
-        if (this.props.list && this.state.map) {
-            for (let el of this.props.list) {
-                let content = '<div id="iw-container">' +
-                    '<div id="top">' +
-                    '<img id="pic" src="/img/default.jpg" alt=' + el.name + '/>' +
-                    '</div>' +
-                    '<div id="bottom">' +
-                    '<p id="name">' + el.name + '</p>' +
-                    '<p id="date">' + moment(el.date).format("lll") + '</p>' +
-                    '</div>' +
-                    '</div>';
-                this.state.map.addMarker({
-                    lat: el.latitude,
-                    lng: el.longitude,
-                    title: el.name,
-                    icon: "/img/Marker.png",
-                    infoWindow: {
-                        content: content,
-                        maxWidth: 134
-                    },
-                    click: (function (e) {
-                        setTimeout((function () {
-                            this.setState({key: Math.random()});
-                        }).bind(this), 2);
-                    }).bind(this)
-                });
-            }
-        }
     }
 
     componentDidUpdate() {
@@ -326,14 +325,6 @@ const mapStateToProps = state => ({
     lat: state.user.lat,
     lng: state.user.lng,
     zoom: state.user.zoom
-});
-
-const mapDispatchToProps = dispatch => ({
-    changeAnchor: (scroll, height) => dispatch({
-        type: 'CHANGE_ANCHOR',
-        scrol: scroll,
-        height: height
-    })
 });
 
 export default connect(mapStateToProps)(Map);
