@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'Kaushan Script Regular';
+  src: url('../../../fonts/KaushanScript-Regular.eot');
+  src: url('../../../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'), url('../../../fonts/KaushanScript-Regular.woff') format('woff'), url('../../../fonts/KaushanScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes show {
+  from {
+    /* начальные значения свойств CSS */
+    height: 0;
+  }
+  to {
+    /* конечные значения свойств CSS */
+    height: 120px;
+  }
+}
+#icon {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+.header {
+  height: 60px;
+  width: 100vw;
+  font-family: 'Proba Pro', cursive;
+  background-color: #2BA0DB;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  color: white;
+  z-index: 3;
+  position: relative;
+}
+.header__title {
+  font-family: 'Kaushan Script Regular', cursive;
+  font-size: 43px;
+  margin-left: 4%;
+  margin-bottom: 2px;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header__title:visited {
+  color: white;
+}
+.header__title:active {
+  color: white;
+}
+.header__title:hover {
+  color: white;
+}
+.header__user {
+  position: relative;
+  margin-right: 4%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__user__ava {
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: .4px solid white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 6px #303030;
+}
+.header__user__name {
+  font-size: 20px;
+  margin: 0 10px;
+}
+.header__user__arrow {
+  width: 17px;
+  height: 17px;
+  background: no-repeat center url("../../../img/вниз_2.svg");
+  background-size: cover;
+}
+.header__menu {
+  z-index: 10;
+  animation: show .5s;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  right: 4%;
+  top: 50px;
+  width: 100px;
+  background: #F2F2F2;
+  border: 0.5px solid #BDBDBD;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.header__menu__item {
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  height: 40px;
+  text-align: left;
+  color: #5b5b5b;
+}
+.header__menu__item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 330px) {
+  .header__title {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+.profile {
+  font-family: "Proba Pro", cursive;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  z-index: 0;
+  min-height: 300px;
+  min-width: 300px;
+  background: #F0F0F0;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.profile::-webkit-scrollbar {
+  width: 0;
+}
+.profile-inner {
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  width: 900px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.profile-inner__top {
+  margin-left: -5%;
+  width: 110%;
+  height: 180px;
+  z-index: 99;
+  /* изображение размыто */
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+}
+.profile-inner__user {
+  width: 900px;
+  margin: 0 auto;
+  position: absolute;
+  top: 60px;
+}
+.profile-inner__user__ava {
+  margin: 0 auto;
+  background: no-repeat center;
+  background-size: cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  border: 2px solid white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile-inner__user__name {
+  color: white;
+  font-size: 24px;
+  margin: 7px;
+}
+.profile-inner__bottom {
+  background: white;
+  width: 100%;
+  min-height: calc(100vh - 240px);
+}
+.profile-inner__bottom__menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+}
+.profile-inner__bottom__menu__item {
+  box-sizing: border-box;
+  color: #2BA0DB;
+  width: 140px;
+  height: 39px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.profile-inner__bottom__menu__item:hover {
+  border-bottom: #2BA0DB 2px solid;
+}
+.profile-inner__bottom__menu__item-active {
+  box-sizing: border-box;
+  color: #2BA0DB;
+  width: 140px;
+  height: 39px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: #2BA0DB 2px solid;
+}
+.profile-inner__bottom__list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.event {
+  width: 32%;
+  max-width: 280px;
+  min-width: 240px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border-radius: 20px;
+  text-align: left;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.event::-webkit-scrollbar {
+  width: 0;
+}
+.event__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  top: -155px;
+  left: calc(100% - 70px);
+  position: relative;
+}
+.event__loc {
+  background: url("../../../img/visit.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+  cursor: pointer;
+}
+.event__loc:hover {
+  opacity: .9;
+}
+.event__edit {
+  background: url("../../../img/edit.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+  cursor: pointer;
+}
+.event__edit:hover {
+  opacity: .9;
+}
+.event__img {
+  width: 100%;
+  height: 40%;
+  background: no-repeat center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.event__info {
+  text-align: left;
+  color: #5b5b5b;
+  padding: 0 10px 10px 10px;
+}
+.event__info__name {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.event__info__description {
+  margin: 10px 0;
+}
+.new-event {
+  font-family: "Proba Pro", cursive;
+  width: 32%;
+  max-width: 280px;
+  min-width: 240px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border-radius: 20px;
+  text-align: left;
+  overflow-y: scroll;
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+.new-event::-webkit-scrollbar {
+  width: 0;
+}
+.new-event__img {
+  width: 100%;
+  height: 40%;
+  background: no-repeat center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.new-event__name {
+  font-family: "Proba Pro", cursive;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 30px;
+  width: 220px;
+  color: #5b5b5b;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.new-event__description {
+  font-family: "Proba Pro", cursive;
+  overflow: visible;
+  resize: none;
+  box-sizing: content-box;
+  margin: 10px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 94px;
+  font-size: 17px;
+  width: 90%;
+  color: #5b5b5b;
+  overflow-y: hidden;
+}
+.new-event__move {
+  position: relative;
+  background: url("../../../img/вниз.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+}
+.new-event__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  top: -155px;
+  left: calc(100% - 70px);
+  position: relative;
+}
+.new-event__btn {
+  background: url("../../../img/checkmark.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+  cursor: pointer;
+}
+.new-event__btn:hover {
+  opacity: .9;
+}
+.new-event__loc {
+  background: url("../../../img/visit.svg") no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+  cursor: pointer;
+}
+.new-event__loc:hover {
+  opacity: .9;
+}

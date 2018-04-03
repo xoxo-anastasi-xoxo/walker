@@ -1,27 +1,24 @@
 import React, {Component} from 'react'
-import Header from '../components/Header/Header'
-import Face from "../components/Face/Face";
+import Header from '../components/NewSite/Header/Header'
 import {connect} from "react-redux";
-import About from "../components/About/About";
-import Footer from "../components/Footer/Footer";
+import FirstLevel from "../components/NewSite/FirstLevel/FirstLevel";
+import SecondLevel from "../components/NewSite/SecondLevel/SecondLevel";
+import ThirdLevel from "../components/NewSite/ThirdLevel/ThirdLevel";
 
 class Home extends Component {
     render() {
         return (
-            <div className="home-page">
+            <div className="page">
                 <Header/>
-                <Face/>
-                <About list={this.props.about_walker} title="Walker - это:"/>
-                <About list={this.props.about_us} title="Наша команда"/>
-                <Footer/>
+                <FirstLevel/>
+                <SecondLevel/>
+                <ThirdLevel/>
             </div>
         );
     }
 }
 
 const mapStateToProps = state => ({
-    about_walker: state.main_info.about_walker,
-    about_us: state.main_info.about_us
 });
 
 export default connect(mapStateToProps)(Home);

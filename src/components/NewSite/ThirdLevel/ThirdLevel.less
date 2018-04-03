@@ -1,0 +1,185 @@
+@import "../../../shared";
+
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+.n_third-level {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Proba Pro', cursive;
+  height: 100vh;
+  min-width: 300px;
+  min-height: 500px;
+
+  &__inner {
+    height: ~"calc(100vh - 61px)";
+    min-height: 439px;
+    display: flex;
+    justify-content: center;
+    &__left {
+      width: 35%;
+      height: 100%;
+      padding-top: 50px;
+      box-sizing: border-box;
+      &__text {
+        font-size: 30px;
+        width: 300px;
+        margin: 50px auto 70px auto;
+      }
+
+      &__button {
+        border-radius: 3px;
+        cursor: pointer;
+        color: white;
+        background-color: @main_color;
+        width: 230px;
+        height: 60px;
+        font-size: 20px;
+        margin-top: 70px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+        }
+        &:active {
+          color: white;
+        }
+        &:hover {
+          opacity: .95;
+          color: white;
+        }
+      }
+
+      &__download-buttons {
+        display: flex;
+        justify-content: space-around;
+        &__ios {
+          background: no-repeat center url("../../../img/app_store.svg");
+          background-size: contain;
+          width: 200px;
+          height: 60px;
+        }
+        &__android {
+          background: no-repeat center url("../../../img/google_play.svg");
+          background-size: contain;
+          width: 200px;
+          height: 60px;
+          border-radius: 20px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &__right {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: left;
+      &__phone-1 {
+        z-index: 2;
+        background: no-repeat center url("../../../img/phone_1-min.png");
+        background-size: contain;
+        height: 100%;
+        width: 50%;
+        margin-left: 40px;
+        margin-right: -100px;
+        padding-top: 10px;
+      }
+
+      &__phone-2 {
+        z-index: -2;
+        background: no-repeat center url("../../../img/phone_0-min.png");
+        background-size: contain;
+        height: 100%;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .n_third-level {
+    &__inner {
+      &__left {
+        width: 40%;
+
+      }
+      &__right {
+        width: 50%;
+        &__phone-1 {
+
+          margin-right: -70px;
+        }
+        &__phone-2 {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .n_third-level {
+    &__inner {
+      &__left {
+        padding-top: 45px;
+        &__text {
+          font-size: 25px;
+        }
+
+        &__button {
+          box-sizing: border-box;
+          width: 600px;
+          height: 50px;
+          font-size: 18px;
+        }
+
+        &__download-buttons {
+          display: block;
+          &__ios {
+            &__block {
+              margin: 5px auto;
+              background: no-repeat center url("../../../img/app_store.svg");
+              background-size: contain;
+              width: 200px;
+              height: 60px;
+            }
+          }
+          &__android {
+            &__block {
+              margin: 5px auto;
+              background: no-repeat center url("../../../img/google_play.svg");
+              background-size: contain;
+              width: 200px;
+              height: 60px;
+            }
+          }
+        }
+      }
+
+      &__right {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .n_third-level {
+    &__inner{
+      &__left {
+        width: 90%;
+        &__text {
+          font-size: 30px;
+        }
+      }
+
+      &__right {
+        display: none;
+      }
+    }
+  }
+}
