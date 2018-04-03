@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ee0ecbb-5b9d-4ac7-a8aa-a5cae5ce6b33" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/reducers/main_info.js" afterPath="$PROJECT_DIR$/src/reducers/main_info.js" />
-    </list>
+    <list default="true" id="7ee0ecbb-5b9d-4ac7-a8aa-a5cae5ce6b33" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -248,7 +246,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136393000" />
+    <option name="totallyTimeSpent" value="136988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
