@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Proba Pro";
+  src: url('../../../fonts/ProbaPro/ProbaPro-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../../../fonts/ProbaPro/ProbaPro-Regular.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+.n_footer {
+  width: 100%;
+  color: #5b5b5b;
+  box-sizing: border-box;
+  font-family: 'Proba Pro', cursive;
+  padding: 20px;
+}

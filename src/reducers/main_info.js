@@ -1,54 +1,67 @@
-let name = "Walker";
-let year = 2018;
-let main_menu = [{name:"Web", href:"/web"}, {name:"О нас", href:"/"}, {name:"Скачать", href:"/download"}, {name:"FAQ", href:"/faq"}];
-let about_walker = [
-    {
-        img: "img/img_1.jpg",
-        name: "Коллеги",
-        title: "Бизнес-встречи одним щелчком по карте"
-    },
-    {
-        img: "img/img_2.jpg",
-        name: "Новые знакомства",
-        title: "Новые знакомства на публичных мероприятиях"
-    },
-    {
-        img: "img/img_3.jpg",
-        name: "Старые друзья",
-        title: "Встречи с друзьями в один клик"
-    }
+const merits = [
+    "Бизнес-встречи в один клик",
+    "Возможность найти единомышленников",
+    "Организация публичных мероприятий и вечеринок одним щелчком",
+    "Карта всегда покажет события рядом с тобой"
 ];
-let about_us = [
+
+let scrollHeight = window.pageYOffset || document.documentElement.scrollTop;
+let documentHeight = document.body.clientHeight;
+let pubEvents = [
     {
-        img: "img/Lesha.jpg",
-        name: "Алексей Горбачев",
-        responsibility: "Android-разработчик"
+        name: "Велосходка vip",
+        date: 1521191760000,
+        lat: 55.761,
+        lng: 37.653,
+        img: "../img/velo.png",
+        type: "priv"
     },
     {
-        img: "img/Anastasi.jpg",
-        name: "Анастасия Казанцева",
-        responsibility: "Frontend-разработчик"
+        name: "Велосходка_1",
+        date: 1521191760000,
+        lat: 55.763,
+        lng: 37.62,
+        img: "../img/velo.png"
     },
     {
-        img: "img/Vladosik.jpg",
-        name: "Владислава Вакуленко",
-        responsibility: "Frontend-разработчик"
+        name: "Велосходка vip_2",
+        date: 1521191760000,
+        lat: 55.73,
+        lng: 37.61,
+        img: "../img/velo.png",
+        type: "priv"
     },
     {
-        img: "img/Antosha.jpg",
-        name: "Антон Пепеляев",
-        responsibility: "IOS-разработчик"
-    },
-    {
-        img: "img/Misha.jpg",
-        name: "Михаил Затепякин",
-        responsibility: "Backend-разработчик"
+        name: "Велосходка_2",
+        date: 1521191760000,
+        lat: 55.74,
+        lng: 37.61,
+        img: "../img/velo.png"
     }
 ];
 
-export default function main_info(state = {name, year, main_menu, about_us, about_walker}, action) {
+
+export default function main_info(state = {merits, scrollHeight, documentHeight, pubEvents}, action) {
     switch (action.type) {
+        // case "UPLOAD_EVENTS":
+        //     for (let el of action.list) {
+        //         fetch('http://walkerapp.ru:8080/events/get_public?event_id=' + el.id, {
+        //             method: 'GET'
+        //         }).then(function (response) {
+        //             return response.json();
+        //         }).then((value => {
+        //             console.log(value);
+        //             el.name = value.name;
+        //             if (value.pathToThePicture && value.pathToThePicture!=="Error")
+        //             el.pathToThePicture = "http://walkerapp.ru:8080/events/get_picture?path=" + value.pathToThePicture;
+        //             else el.pathToThePicture = "/img/default.jpg";
+        //                     el.date = value.date;
+        //         }));
+        //     }
+        //     return {...state, pubEvents: action.list};
 
+        case "CHANGE_ANCHOR":
+            return {...state, scrollHeight: action.scrol, documentHeight: action.height};
         default:
             return state
     }
